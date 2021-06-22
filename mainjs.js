@@ -1,9 +1,6 @@
-/*$('.header').click(function(){
-    <a herf="https://naver.com"></a>
-});*/
-// $(window).scroll(function() {
-//     $('.header').css({left: 0 - $(this).scrollLeft()});/*가로로 스크롤할때 픽스한 개체도 같이*/
-// });
+document.getElementById('startbtn').addEventListener('click', function() {
+    modal('my_modal');
+});
 
 function modal (id){
     var zIndex = 9999;
