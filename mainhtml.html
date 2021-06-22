@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,43 @@
     <link rel="stylesheet" href="maincss.css">
     <title>Dreamer</title>
 </head>
+
 <body>
     <header>
         <h2><span><a href=# class="dreamer">Dreamer</a></button></span>&nbsp;</h2>
         <nav>
             <span><button id="popup_open_btn">로그인/회원가입</button></span>&nbsp;
             <span><button id="servicebtn">기업서비스</button><span>&nbsp;&nbsp; &nbsp;&nbsp;
-            </nav>
+        </nav>
     </header>
 
-        <section>
-            <div id="drmain1" >
+    <section>
+        <div id="drmain1">
             <h1>예술인의 필모그래피를
                 <br>
-                탄탄하게, 드리머</h1>
-                <button id="startbtn" type="button">시작하기</button>
-            </div> 
-            <div>
-                <img class="camera" src="images/camera.jpg">
-            </div> 
-        </section>
-        <section>
-            <div>
-                <img class="movie" src="images/movie.jpg">
-            </div> 
+                탄탄하게, 드리머
+            </h1>
+            <button id="startbtn" type="button">시작하기</button>
+        </div>
+        <div>
+            <img class="camera" src="images/camera.jpg">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img class="movie" src="images/movie.jpg">
+        </div>
 
         <div id="drmain2">
-                <p><h1>예술인의 필모그래피를<br>
-                    탄탄하게, 드리머<br>
-                </h1>
+            <p>
+            <h1>예술인의 필모그래피를<br>
+                탄탄하게, 드리머<br>
+            </h1>
 
-                <br>
-                나에게 딱 맞는 회사를 찾거나<br>
-                나에게 딱 맞는 회사가 커리어를 제안합니다.
-                </p>
+            <br>
+            나에게 딱 맞는 회사를 찾거나<br>
+            나에게 딱 맞는 회사가 커리어를 제안합니다.
+            </p>
         </div>
     </section>
     <div id="my_modal">
@@ -59,51 +63,56 @@
             <div class="ModalBody_input">
                 <form action="" method="POST">
                     <div class="padding-top-10">
-                        <label for="email" style="text-align: left;">이메일</label><br>
+                        <label for="email">이메일</label>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" class="form-control"><br>
+                            <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" class="form-control">
                         </div>
-                        <label for="password">비밀번호</label><br>
+                        <label for="password">비밀번호</label>
                         <div class="form-group-pw">
-                            <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요" class="form-control"><br>
+                            <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요"
+                                class="form-control">
                         </div>
                     </div>
-                    <button type="submit" id="loginBtn" class="login-btn">로그인</button><br>
+                    <div class="margin-top-10">
+                        <button type="submit" id="loginBtn" class="login-btn">로그인</button>
+                    </div>
                     <div class="flex-between-center">
                         <div class="checkBox">
                             <label for="remember" class="label-margin-none">
                                 <input type="checkbox" id="remember" name="remember">
-                                <span class="checkbox-body"></span>
                                 <div class="checkBox-text">
                                     로그인 유지
                                 </div>
                             </label>
-                            </div>
-                            <a>아이디ㆍ비밀번호 찾기</a>
+                        </div>
+                        <a style="font-size: 13px;">아이디ㆍ비밀번호 찾기</a>
                     </div>
                 </form>
-                <div class="modal-text" style="font-size: 13px;">
-                    SNS계정으로 간편하게 로그인 하세요.
+                <div>
+                    <div class="modal-text">
+                        SNS계정으로 간편하게 로그인 하세요.
+                    </div>
+                    <div class="sns_login">
+                        <a id="naverLoginBtn" class="sns-btn-naver">
+                            <img src="images/naver_logo.png" alt="naver_icon">
+                        </a>
+                        <a id="kakaoLoginBtn" class="sns-btn-kakao">
+                            <img src="images/kakao_logo.png" alt="kakao_icon">
+                        </a>
+                        <a id="googleLoginBtn" class="sns-btn-google">
+                            <img src="images/google_logo.png" alt="google_icon">
+                        </a>
+                        <a id="appleLoginBtn" class="sns-btn-apple">
+                            <img src="images/apple_logo.png" alt="">
+                        </a>
+                    </div>
+                    <button class="joinBtn">
+                        드리머 회원가입 하기
+                    </button>
                 </div>
-                <div class="sns_login">
-                    <a id="naverLoginBtn" class="sns-btn-naver">
-                        <img src="images/naver_logo.png" alt="naver_icon">
-                    </a>
-                    <a id="kakaoLoginBtn" class="sns-btn-kakao">
-                        <img src="images/kakao_logo.png" alt="kakao_icon">
-                    </a>
-                    <a id="googleLoginBtn" class="sns-btn-google">
-                        <img src="images/google_logo.png" alt="google_icon">
-                    </a>
-                    <a id="appleLoginBtn" class="sns-btn-apple">
-                        <img src="images/apple_logo.png" alt="">
-                    </a>
-                </div>
-                <button class="joinBtn">
-                    드리머 회원가입 하기
-                </button>
             </div>
-        </div>  
-        </body>
-        <script type="text/javascript" src="mainjs.js"> </script>
+        </div>
+</body>
+<script type="text/javascript" src="mainjs.js"> </script>
+
 </html>

@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 header {
   margin: 0;
   position: fixed;
@@ -13,6 +16,17 @@ header {
   justify-content: space-between;/*정렬*/
   align-items: center;
   font-size: 40px;
+}
+input{
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-rendering: auto;
+  text-align: start;
+  cursor: text;
+  font: 400 13.3333px Arial;
 }
 
 a.dreamer{
@@ -112,6 +126,7 @@ section{
   right: 10px;
 }
 div.modal-text{
+  margin-top: 20px;
   font-size: 13px;
   text-align: center;
 }
@@ -131,26 +146,20 @@ div.modal-text{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 .label-margin-none{
   margin: 0;
   width: 100%;
 }
-.checkBox-body{
+.checkBox{
+  position: relative;
   float: left;
-  border: 1px solid #c5c5c5;
-  border-radius: 3px;
-  vertical-align: middle;
-  position: relative;
-}
-.checkbox-body::after{
-  background-color: #ffd400;
-  position: relative;
-  border: 0;
 }
 .checkBox .checkBox-text{
   position: relative;
   float: left;
+  font-size: 13px;
 }
 #my_modal .sns-btn-naver, .sns-btn-kakao,.sns-btn-google,.sns-btn-apple{
   width: 53px;
@@ -206,11 +215,13 @@ div.modal-text{
   background-color: #fff;
   border-color: #116ad4;
   width: 100% !important;
-  margin-top: 20px !important;
   padding: 15px 15px;
 }
 .padding-top-10{
   padding-top: 10px !important;
+}
+.margin-top-10{
+  margin-top: 10px;
 }
 .form-control{
   display: block;
@@ -222,4 +233,5 @@ div.modal-text{
   background-color: #fff;
   background-image: none;
   border: 1px solid #e6e6e6;
+  box-sizing: border-box;
 }
