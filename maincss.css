@@ -25,3 +25,89 @@ button{
     border: 1;
     outline: 1;
 }
+#my_modal{
+  display: none;
+  width: 400px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+.Modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.ModalHeader{
+  
+}
+
+div.modal-text{
+  font-size: 13px;
+  text-align: center;
+}
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label-margin-none{
+  margin: 0;
+  width: 100%;
+}
+.checkBox-body{
+  float: left;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  vertical-align: middle;
+  position: relative;
+}
+.checkbox-body::after{
+  background-color: #ffd400;
+  position: relative;
+  border: 0;
+}
+.checkBox .checkBox-text{
+  position: relative;
+  float: left;
+}
+#my_modal .sns-btn-naver, .sns-btn-kakao,.sns-btn-google,.sns-btn-apple{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns_login{
+  margin: 13px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sns-btn-naver{
+  background-color: #20c702;
+}
+.sns-btn-naver img{
+  width: 30px;
+}
+.sns-btn-kakao{
+  background-color: #f9e000;
+}
+.sns-btn-kakao img{
+  width: 30px;
+}
+.sns-btn-google{
+ background-color: #f8f9fd;
+}
+.sns-btn-google img{
+  width: 30px;
+}
+.sns-btn-apple{
+  background-color: #000;
+}
+.sns-btn-apple img{
+  width: 20px;
+}
+
+

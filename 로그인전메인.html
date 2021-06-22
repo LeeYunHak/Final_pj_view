@@ -11,8 +11,8 @@
     <header>
         <h2>Dreamer</h2>
         <nav>
-                <span><button>로그인/회원가입</button></span>
-                <span><button>기업서비스</button><span>       
+            <span><button id="popup_open_btn">로그인/회원가입</button></span>
+            <span><button>기업서비스</button><span>       
         </nav>
     </header>
     <div class="mainImg">
@@ -20,43 +20,60 @@
             <br>
             탄탄하게, 드리머</h1>
             <button type="button">시작하기</button>
-            <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p><p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p><p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p><p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
-  <p>This is the main area.</p>
+    </div>
+    <div id="my_modal">
+        <div class="ModalHeader" style="text-align: center;">
+            <h3>Dreamer</h3>
+            <button type="button" class="Modal_close_btn">X</button>
+        </div>
+        <div class="ModalBody">
+            <div class="ModalBody_text" style="text-align: center;">
+                <h1>
+                    예술인들을 위한
+                    <br>
+                    구인구직 플랫폼, 드리머!
+                </h1>
+            </div>
+            <div class="ModalBody_input">
+                <form action="" method="POST">
+                    <label for="email" style="text-align: left;">이메일</label><br>
+                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요"><br>
+                    <label for="password">비밀번호</label><br>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요"><br>
+                    <button type="submit">로그인</button><br>
+                    <div class="flex-between-center">
+                        <div class="checkBox">
+                            <label for="remember" class="label-margin-none">
+                                <input type="checkbox" id="remember" name="remember">
+                                <span class="checkbox-body"></span>
+                                <div class="checkBox-text">
+                                    로그인 유지
+                                </div>
+                            </label>
+                            <a>아이디ㆍ비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-text" style="font-size: 13px;">
+                    SNS계정으로 간편하게 로그인 하세요.
+                </div>
+                <div class="sns_login">
+                    <a id="naverLoginBtn" class="sns-btn-naver">
+                        <img src="images/naver_logo.png" alt="naver_icon">
+                    </a>
+                    <a id="kakaoLoginBtn" class="sns-btn-kakao">
+                        <img src="images/kakao_logo.png" alt="kakao_icon">
+                    </a>
+                    <a id="googleLoginBtn" class="sns-btn-google">
+                        <img src="images/google_logo.png" alt="google_icon">
+                    </a>
+                    <a id="appleLoginBtn" class="sns-btn-apple">
+                        <img src="images/apple_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script type="text/javascript" src="mainjs.js"> </script>
 </html>
