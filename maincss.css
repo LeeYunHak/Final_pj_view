@@ -1,9 +1,27 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+  height: 75px;
+  padding: 1rem;
+  color: black;
+  background: gray;
+  /*font-weight: bold;*/
+  display: flex;/*한줄로 나오게*/
+  justify-content: space between;
+  align-items: center;
+}
+body {
+    padding-top: 75px;
+  }
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
 }
 button{
-    border: 0;
-    outline: 0;
+    border: 1;
+    outline: 1;
 }
