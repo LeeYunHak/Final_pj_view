@@ -1,47 +1,25 @@
-
-
-
 header {
+  margin: 0;
   position: fixed;
   top: 0;
-  left: 300px;
-  right: 300px;
-  height: 75px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
   padding: 1px;
   color: rgb(0,206,201);
   background: rgb(229, 250, 249);
-  /*font-weight: bold;*/
+  font-weight: bold;
   display: flex;/*한줄로 나오게*/
   justify-content: space-between;/*정렬*/
   align-items: center;
-  font-size: 20px;
-  font-family:fantasy; 
-}
-
-body{
-  margin: 0;
-
-}
-.navbar{
-  background: rgb(229, 250, 249);
-  display: flex;
-  align-items: center;
-  padding: 20px 300px;
   font-size: 40px;
-
 }
-a{
+
+a.dreamer{
   text-decoration: none; color: rgb(0, 206, 201);
-
-}
-
-/* body {
-  position: absolute;
-  padding-top: 100px;
+  position: fixed;
   left: 300px;
-  right: 300px;
-} */
-
+  }
 section{
   width: 1926px;
   height: 410px;
