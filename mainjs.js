@@ -50,3 +50,5 @@ document.getElementById('popup_open_btn').addEventListener('click', function() {
     // 모달창 띄우기
     modal('my_modal');
 });
+
+

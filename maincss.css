@@ -7,7 +7,7 @@ header {
   top: 0;
   left: 0px;
   right: 0px;
-  height: 100px;
+  height: 70px;
   padding: 1px;
   color: rgb(0,206,201);
   background: rgb(229, 250, 249);
@@ -15,7 +15,7 @@ header {
   display: flex;/*한줄로 나오게*/
   justify-content: space-between;/*정렬*/
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
 }
 input{
   letter-spacing: normal;
@@ -68,25 +68,27 @@ section{
   margin-left: 1226px;
 }
 
+.nav{
+  position: relative;
+  margin-top: -15px;
+  margin-left: 1000px;
+}
+
 #popup_open_btn{
   border: 1px solid rgb(229, 250, 249);
   background-color: rgb(229, 250, 249);
   color: rgb(0,206,201);
   font-size: 15px;
-  position: fixed;
-  top: 35px;
   right: 450px;
-}
+  }
 
 #servicebtn{
   border: 1px solid rgb(229, 250, 249);
   background-color: rgb(229, 250, 249);
-  color: rgb(0    206 201);
+  color: rgb(0, 206, 201);
   font-size: 15px;
-  position: fixed;
-  top: 35px;
-  right: 300px;
-}
+  
+  }
 
 #beforemainimg2{
   position: absolute; top:0; left: 0;
@@ -208,7 +210,7 @@ div.modal-text{
   width: 100% !important;
   padding: 15px 15px;
 }
-.joinBtn{
+#joinBtn{
   font-size: 17px;
   border-radius: 4px !important;
   color: #116ad4;
