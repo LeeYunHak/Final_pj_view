@@ -19,6 +19,7 @@ header {
     /*정렬*/
     align-items: center;
     font-size: 35px;
+    z-index: 999 !important;
 }
 body{
     letter-spacing: 0;
