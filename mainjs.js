@@ -49,6 +49,7 @@ Element.prototype.setStyle = function(styles) {
 document.getElementById('popup_open_btn').addEventListener('click', function() {
     // 모달창 띄우기
     modal('my_modal');
+    // location.href = "https://kmong.com/?open=login_modal";
 });
 
 
