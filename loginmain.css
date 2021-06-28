@@ -1,0 +1,404 @@
+*{box-sizing: border-box;}
+
+a:link { 
+  color: black;
+  text-decoration: none;}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.full{
+    height: 100vh;
+    width: 100%;
+    float: left;
+  display: block;
+}
+
+.half{
+  position: relative;
+  float: left;
+  /* padding-top: 100px; */
+  top: 15vh;
+  height: 85vh;
+  width: 100%;
+  padding-left: 14vh;
+  padding-right: 14vh;
+  float: left;
+  display: block;
+}
+
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    /* left: -30vh; */
+    right: 15vh;
+    height: 7vh;
+    width: 162vh;
+    /* height: 60px; */
+    padding: 1vh;
+    color: rgb(0,206,201);
+    background: white;
+    border-bottom: solid 1px rgba(26, 97, 96, 0.219);
+    font-weight: bold;
+    display: flex;/*한줄로 나오게*/
+    justify-content: space-between;/*정렬*/
+    align-items: center;
+    font-size: 30px;
+    padding-right: 27vh;
+    z-index: 1;
+}
+
+a.dreamer{
+    position: fixed;
+    left: 10vh;
+    top: -8vh;
+    max-width: 50%;
+    margin-bottom: 50px;
+    /* z-index: 2; */
+}
+
+.bar{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 170vh;
+  height: 10vh;
+  /* text-align: center; */
+  cursor: pointer;
+  float: left;
+  display: block;
+}
+
+  #selectnavi{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0,206,201);
+    font-size: 2.2vh;
+    left: 250vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+  
+  #resume{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+  #matchup{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-right: 2vh;
+    z-index: 1;
+  }
+
+  .navi{
+      /* margin-bottom: 15px;
+      margin-right: 500px; */
+      /* padding-left: 20vh; */
+      left: 10vh;
+      padding-bottom: 2vh;
+      /* margin-top: 40px; */
+      /* overflow:hidden; */
+      float: left;
+      display: block;
+      
+  }
+
+  .mp{
+    height: 5vh;
+    width: 17vh;
+    float: right;
+  display: block;
+  }
+
+  #search1{
+    margin-top: 1.7vh;
+    cursor: pointer;
+    margin-left: 5vh;
+  }
+
+  #mypage1{
+    margin-right: -26vh;
+    margin-top: 1.7vh;
+    float: right;
+    cursor: pointer;
+  }
+
+  select{
+    width: 12vh;
+    padding: .6em .6em;
+    border: 1px solid #999;
+    background: url('images/tri.jpg') no-repeat 95% 50%;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .prod, .light, .acous, .shoot, .se, .manuf, .actor, .art, .makeup{
+    width: 18vh;
+    height: 10vh;
+    text-align: center;
+    background-image: url("images/movie.jpg");
+    float: left;
+  display: block;
+  }
+
+  .prod1, .light1, .acous1, .shoot1, .se1, .manuf1, .actor1, .art1, .makeup1{
+    width: 18vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bot{
+    width: 162vh;
+    height: 10vh;
+    float: left;
+    display: block;
+  }
+
+  .sel{
+    margin-bottom: 20px;
+    float: left;
+  display: block;
+  }
+
+  #job{
+    width: 20vh;
+    padding: .6em .5em;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 1px 1px gray;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #country{
+    width: 12vh;
+    padding: .6em .5em;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 1px 1px gray;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #work{
+    width: 15vh;
+    padding: .6em .5em;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 1px 1px gray;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #prod {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #light {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #acous {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #shoot {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #se {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #manuf {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #actor {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #art {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+  #makeup {
+    color: gray;
+    font-size: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .opennavi{
+    position: fixed;
+    top: 7vh;
+    left: 50vh;
+    z-index: 999;
+    background-color: rgb(235, 240, 235);
+    /* border: 1px solid rgb(162, 162, 162); */
+    border-top: none;
+    display: inline-block;
+    display: none;
+    /* box-shadow: 0 0 2px 2px gray; */
+    /* float: left; */
+  }
+  a.company-href {
+    margin: 10px;
+    padding: 0;
+    border: 0;
+}
+
+div.company-margin {
+    margin-top: 10px;
+    float: left;
+  display: block;
+}
+
+.company-job {
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    height: 10px;
+    /* float: left;
+  display: block; */
+}
+
+.company-img {
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: 50%;
+    width: 280px;
+    height: 280px;
+    border-radius: 5px;
+    float: left;
+  display: block;
+}
+
+.jop-card-position {
+    text-align: center;
+    float: left;
+  display: block;
+}
+
+.job-card-company-name {
+    text-align: center;
+    float: left;
+  display: block;
+}
+
+.job-card-company-location {
+    text-align: center;
+    float: left;
+  display: block;
+}
+
+.job-card-end-date {
+    text-align: center;
+    float: left;
+  display: block;
+}
+
+
+.arrow_box {
+width: 20vh; text-align: center;    
+position: fixed;
+background: #ffffff;
+border: 4px solid rgb(0, 201, 206);
+right: 8vh;
+top: 10vh;
+display: none;
+}
+
+.arrow_box:after, .arrow_box:before {
+bottom: 100%;
+left: 50%;
+border: solid transparent;
+content: "";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+.arrow_box:after {
+border-color: rgba(255, 255, 255, 0);
+border-bottom-color: #ffffff;
+border-width: 15px;
+margin-left: -15px;
+}
+.arrow_box:before {
+border-color: rgba(96, 185, 245, 0);
+border-bottom-color: rgb(0, 201, 206);
+border-width: 21px;
+margin-left: -21px;
+}
+
+  

@@ -302,10 +302,10 @@
             item.parentNode.classList.remove('active');
             });
         }
-        toggleSubmitButton();
+        // toggleSubmitButton();
         }); 
 
-        form.addEventListener("submit", (e) => e.preventDefault());
+        // form.addEventListener("submit", (e) => e.preventDefault());
 
         checkBoxes.forEach((item) => item.addEventListener('input', toggleCheckbox));
 
@@ -313,8 +313,8 @@
             const { checked, id } = e.target;
         agreements[id] = checked;
         this.parentNode.classList.toggle('active');
-        checkAllStatus(); //3개의 체크박스의 상태를 확인해서 모두동의에 체크(미구현)
-        toggleSubmitButton();
+        checkAllStatus(); //3개의 체크박스의 상태를 확인해서 모두동의에 체크
+        // toggleSubmitButton();
     }
     
     function checkAllStatus() {
