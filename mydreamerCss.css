@@ -7,10 +7,16 @@ a{
     margin: 0;
     padding: 0;
     border: 0;
+    /* text-decoration: none; */
+    text-decoration: black;
 }
 
 a, a:active, a:hover, a:visited {
     color: inherit;
+}
+
+ol,ul{
+    list-style: none;
 }
 
 .full{
@@ -308,4 +314,118 @@ input[type="file" i]{
     font-size: 18px;
     line-height: 19px;
     font-weight: 700;
+}
+
+.third-contents{
+    padding: 30px 20px;
+}
+
+.third-contents>a{
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+/* 사이드바 옆 */
+.m-contents{
+    padding-left: 270px;
+}
+/* 지원현황 */
+.status{
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 26px 0 34px;
+}
+/* 지원현황 h2 */
+.status-h2{
+    font-size: 18px;
+    padding: 0 32px 26px;
+    font-weight: 700;
+}
+
+/* 지원현황 ul */
+.m-ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* 지원현황 ul>li */
+.m-ul>li:first-of-type{
+    border: none;
+}
+
+.m-ul>li{
+    float: left;
+    width: 25%;
+    border-left: 1px solid #e1e2e3;
+}
+/* a태그 */
+.m-ul>li>a{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.m-ul>li>a>em{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    padding-bottom: 11px;
+    font-style: normal;
+}
+
+.m-ul>li>a>span{
+    font-size: 16px;
+    line-height: 19px;
+}
+/* 북마크쪽 큰틀 */
+.sec-frame{
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+}
+
+.sec-frame>div:first-of-type{
+    border: none;
+}
+
+.sec-frame>div{
+    border-top: 1px solid #e1e2e3;
+}
+
+/* 북마크 */
+.bookmark{
+    padding: 26px 30px 30px;
+}
+
+.bookmark>h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.b-div>ul{
+    margin: -10px;
+    padding: 0;
+}
+b-ul:before{
+    content: "";
+    display: table;
+}
+
+.bookmark>div>ul>li{
+    width: 33.33333%;
+}
+
+.b-div>ul li{
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 }
