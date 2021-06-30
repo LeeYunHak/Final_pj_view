@@ -1,0 +1,601 @@
+/* 마이드리머 CSS파일 */
+
+*{box-sizing: border-box;}
+
+a{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* text-decoration: none; */
+    text-decoration: black;
+}
+
+a, a:active, a:hover, a:visited {
+    color: inherit;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -25vh;
+    right: 15vh;
+    height: 7.7vh;
+    width: 202vh;
+    /* height: 60px; */
+    padding: 1vh;
+    color: rgb(0,206,201);
+    /* background: rgb(229, 250, 249); */
+    border-bottom: solid 1px #c8c8c8;
+    font-weight: bold;
+    display: flex;/*한줄로 나오게*/
+    justify-content: space-between;/*정렬*/
+    align-items: center;
+    font-size: 35px;
+    z-index: 1;
+    background-color: white
+}
+
+a.dreamer{
+    text-decoration: none; color: rgb(0, 206, 201);
+    position: fixed;
+    left: 25vh;
+    top: -1vh;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px rgb(162, 162, 162);
+}
+
+.mp{
+    height: 5vh;
+    width: 17vh;
+    float: right;
+  }
+
+  #selectnavi{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0,206,201);
+    font-size: 2.2vh;
+    /* left: 250vh; */
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+  #resume{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+#matchup{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-right: 2vh;
+    z-index: 1;
+  }
+
+  #search1{
+    margin-top: 2vh;
+    cursor: pointer;
+  }
+
+  #mypage1{
+    margin-top: 2vh;
+    float: right;
+    cursor: pointer;
+  }
+
+  .navi{
+    /* margin-bottom: 15px;
+    margin-right: 500px; */
+    /* padding-left: 20vh; */
+    left: 10vh;
+    padding-bottom: 2vh;
+    /* margin-top: 40px; */
+    /* overflow:hidden; */
+}
+/* 공백 */
+.Blank{
+    height: 50px;
+}
+
+/* 섹션 */
+.sec{
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    max-width: 1060px;
+    padding: 0 0 90px;
+    display: block;
+    border: 0;
+}
+
+.subheading{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 50px 0 20px;
+}
+/* 화면에 보이는 프레임(틀) */
+.mainFrame{
+    position: relative;
+}
+/* 사이드 바 */
+.sidebar{
+    top: 0;
+    left: 0;
+    width: 250px;
+    position: absolute;
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 사이드 바 내용 */
+.sidebar-contents>div:first-of-type{
+    border: none;
+}
+.sidebar-contents{
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+}
+.sidebar-contents>div{
+    border-top: 1px solid #c8c8c8;
+}
+/* 사이드바 상단부터 첫번째 */
+.first-contents{
+    border: none;
+    padding: 42px 20px 30px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* 프로필 이미지 */
+.profile-img{
+    display: inline-block;
+    position: relative;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 이미지 업로드 인풋 */
+.img-input{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 이미지 업로드 인풋에 파일 버튼 숨기는거임 */
+.img-input input[type=file]{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input[type="file" i]{
+    appearance: none;
+    background-color: initial;
+    align-items: baseline;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+/* 카메라 아이콘 틀 */
+.fi-fi-camera{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    padding: 8px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+/* 카메라 아이콘 */
+.fi-fi-camera:before{
+    content:url("images/016-camera.png")
+}
+
+/* 프로필 이름 누르면 마이프로필 가지는 a태그 */
+.myprofile_a{
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* 프로필 dl */
+.myprofile_a>dl{
+    padding-top: 30px;
+}
+
+/* 프로필 dt */
+.myprofile_a>dl>dt{
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 프로필 dd */
+.myprofile_a>dl>dd:first-of-type{
+    padding-top: 20px;
+}
+/* 프로필 dd */
+.myprofile_a>dl>dd{
+    font-size: 14px;
+    line-height: 16px;
+    color: #767676;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 0;
+}
+
+.sc-div{
+    position: relative;
+    padding: 30px 25px 30px 20px;
+}
+.sc-div>a:last-of-type{
+    padding: 0;
+}
+.sc-div>a{
+    display: flex;
+    padding-bottom: 23px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    position: relative;
+    margin: 0;
+    border: 0;
+}
+.sc-div>a>span{
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.sc-div>a>strong{
+    position: relative;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.third-contents{
+    padding: 30px 20px;
+}
+
+.third-contents>a{
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+/* 사이드바 옆 */
+.m-contents{
+    padding-left: 270px;
+}
+/* 이력서 */
+.status{
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 26px 0 25px;
+}
+
+.resume{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+}
+
+/* 이력서 h2 */
+.resume-h2{
+    font-size: 18px;
+    padding: 0 0px 26px;
+    font-weight: 700;
+}
+
+.resume1{
+    position: relative;
+    font-size: 16px;
+    display: block;
+}
+
+/*이력서선택버튼*/
+.resumeselectbtn{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    margin-top: -2px;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+}
+
+/*이력서선택부분 화살표*/
+.select .resumeselectbtn:after {
+    content: "";
+    top: 50%;
+    right: 20px;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-top: 6px solid #c8c8c8;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+/*학교입력부분 구분선*/
+.univ:after{
+    content: " | ";
+    color: #c8c8c8;
+}
+
+/* 전문분야설정쪽 큰틀 */
+.sec-frame{
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 26px 0 25px;
+}
+
+.speciality{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+}
+
+/* 전문분야 h2 */
+.speciality-h2{
+    font-size: 18px;
+    padding: 0 0px 26px;
+    font-weight: 700;
+}
+
+.speciality1{
+    position: relative;
+    font-size: 16px;
+    display: block;
+}
+
+/*전문분야설정-직무 구분선*/
+.find:after{
+    content: " | ";
+    color: #c8c8c8;
+}
+
+/*이력서선택 모달창*/
+#my_modal {
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    /* width: 700px;
+    height: 500px; */
+    display: none;
+}
+
+.ModalHeader {
+    height: 54px;
+    padding: 16px 20px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: block;
+}
+
+.Modal_close_btn {
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    float: right;
+}
+
+.ModalBody{
+    display: block;
+}
+
+.ModalBody_input{
+    position: relative;
+    display: block;
+}
+
+.selected{
+    border-color: transparent;
+    width: 100%;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: none;
+    /* border: none; */
+}
+
+.mo_resume{
+    background-image: url(images/Dreamer.png);
+    width: 100%;
+    height: 80px;
+    margin: 50px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: block;
+}
+
+.mo_status{
+    top: 12px;
+    left: 10px;
+    position: absolute;
+    color: #c8c8c8;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+}
+
+.mo_matched{
+    position: absolute;
+    color: rgb(0, 206, 201);
+    font-weight: 700;
+    font-size: 11px;
+    padding: 1px 5px;
+    top: 150px;
+    left: 15px;
+    border-radius: 2px;
+    background: rgba(51,102,255,.1);
+    display: block;
+}
+
+.mo_list:after{
+    display: block;
+    content: "";
+    clear: both;
+    box-sizing: border-box;
+}
+
+.mo_name{
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    padding: 10px 15px;
+    text-align: left;
+    margin: 0;
+}
+.mo_name2{
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    padding: 10px 15px;
+    text-align: left;
+    margin: 0;
+}
+.mo_name3{
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    padding: 10px 15px;
+    text-align: left;
+    margin: 0;
+}
+.mo_name4{
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    padding: 10px 15px;
+    text-align: left;
+    margin: 0;
+}
+
+.mo_name:after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 206, 201);
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.mo_foot{
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.warn{
+    color: #c8c8c8;
+    margin: 0 0 15px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mo_submit{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(0,206,201);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
