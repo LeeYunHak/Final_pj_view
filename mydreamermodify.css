@@ -451,7 +451,8 @@ b-ul:before{
     padding: 26px 20px 34px;
 }
 
-/*라벨설정*/ .pwd {
+/*라벨설정*/
+.name, .email, .pwd {
     max-width: 100%;
     font-weight: bold;
 }
