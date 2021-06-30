@@ -451,8 +451,7 @@ b-ul:before{
     padding: 26px 20px 34px;
 }
 
-/*라벨설정*/
-.name, .email {
+/*라벨설정*/ .pwd {
     max-width: 100%;
     font-weight: bold;
 }
@@ -484,6 +483,17 @@ input:focus
 
 /*텍스트박스*/
 #name{
+    width: 100%;
+    margin: 0;
+    padding: 12px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    border-bottom: 1px solid #e1e2e3;
+}
+/*비밀번호*/
+#password{
     width: 100%;
     margin: 0;
     padding: 12px 0;
@@ -544,6 +554,18 @@ input:focus
     padding: 20px;
 }
 
+.resign{
+    width: 30%;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgb(0, 206, 201);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
+}
 .submit{
     width: 30%;
     float: right;
@@ -555,4 +577,5 @@ input:focus
     font-weight: 600;
     border: none;
     cursor: pointer;
+
 }
