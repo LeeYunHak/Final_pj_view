@@ -1,0 +1,439 @@
+
+*{box-sizing: border-box;}
+
+
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -25vh;
+    right: 15vh;
+    height: 7.7vh;
+    width: 202vh;
+    /* height: 60px; */
+    padding: 1vh;
+    color: rgb(0,206,201);
+    /* background: rgb(229, 250, 249); */
+    border-bottom: solid 1px #c8c8c8;
+    font-weight: bold;
+    display: flex;/*한줄로 나오게*/
+    justify-content: space-between;/*정렬*/
+    align-items: center;
+    font-size: 35px;
+    z-index: 1;
+    background-color: white
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navi{
+    /* margin-bottom: 15px;
+    margin-right: 500px; */
+    /* padding-left: 20vh; */
+    left: 10vh;
+    padding-bottom: 2vh;
+    /* margin-top: 40px; */
+    /* overflow:hidden; */
+}
+
+a.dreamer{
+    text-decoration: none; color: rgb(0, 206, 201);
+    position: fixed;
+    left: 25vh;
+    top: -1vh;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px rgb(162, 162, 162);
+}
+
+#selectnavi{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0,206,201);
+    font-size: 2.2vh;
+    /* left: 250vh; */
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+
+  #resume{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+  #matchup{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-right: 2vh;
+    z-index: 1;
+  }
+
+  .mp{
+    height: 5vh;
+    width: 17vh;
+    float: right;
+  }
+
+
+  #search1{
+    margin-top: 2vh;
+    cursor: pointer;
+  }
+
+  #mypage1{
+    margin-top: 2vh;
+    float: right;
+    cursor: pointer;
+  }
+
+  #frame{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background-color: white;
+  }
+  .container{
+    padding: 0;
+    max-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container::before{
+    content: "";
+    display: table;
+  }
+  #resume-wr{
+    padding: 0 10px 50px;
+    position: relative;
+  }
+
+  .resume-info{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .resume-header{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .resume-input-form-group{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /* 타이틀 인풋 */
+  .resume-title-input{
+    margin: 60px 0 40px;
+    font-size: 30px;
+    color: #3b3d40;
+    line-height: 36px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  input[type="text"], textarea{
+    box-shadow: none;
+    resize: none;
+  }
+
+  input, input:focus{
+    outline: none;
+    box-shadow: none;
+  }
+  textarea:focus{
+    outline: none;
+  }
+/* 이름 */
+  .resume-input-name{
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+/* 이메일 */
+  .resume-input-email{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+/* 폰번 */
+  .resume-input-phone{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .resume-about{
+    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .resume-about-header{
+    padding-top: 0;
+    padding: 20px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3d40;
+    border-bottom: 1px solid #bababa;
+  }
+  /* 안내문구 */
+  .guide-comment{
+    white-space: pre-wrap;
+    padding: 10px;
+    background-color: #f3f9fe;
+    font-size: 12px;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: #666666;
+    margin-top: 10px;
+  }
+
+  .resume-ab-in{
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .resume-ab-in>textarea{
+    word-break: break-all;
+    caret-color: black;
+    overflow: hidden;
+    line-height: 22px;
+  }
+
+  .resume-input-about{
+    height: 44px;
+    color: rgb(59, 61, 64);
+    margin: 30px 0px 3px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .resume-list{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+/* 경력 */
+  .resume-list-career{
+    margin-bottom: 20px;
+  }
+
+  .resume-list-header{
+    padding: 40px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3d40;
+    border-bottom: 1px solid #bababa;
+  }
+
+  .resume-list-education{
+    margin-bottom: 20px;
+  }
+
+  .resume-list-skill{
+    margin-bottom: 20px;
+  }
+
+  .resume-list-activity{
+    margin-bottom: 20px;
+  }
+
+  /* 하단 */
+  .resume-btn-container{
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0 50px;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 4;
+  }
+
+  .b-container{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1060px;
+    padding: 15px 0px;
+    margin: 0 auto;
+  }
+
+  .btn-container{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0px 15px;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+/* 임시저장버튼 */
+.temporary-btn{
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin-right: 9px;
+  width: 173px;
+  color: #36f;
+  border: 1px solid #3366ff;
+  min-width: 64px;
+  padding: 14px 27px 13px 28px;
+  border-radius: 25px;
+}
+button{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.label{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  display: inherit;
+  -webkit-box-align: inherit;
+  align-items: inherit;
+  -webkit-box-pack: inherit;
+  justify-content: inherit;
+  color: inherit;
+  padding: .2em .6em .3em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.btn-Completed{
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  width: 163px;
+  color: #ffffff;
+  background-color: #36f;
+  min-width: 64px;
+  padding: 14px 27px 13px 28px;
+  border-radius: 25px;
+}
+
+.p-container{
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.p-root{
+  display: flex;
+  align-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 3px;
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.p-emoji{
+  flex: 0 1 auto;
+  width: 32px;
+  margin-top: 2px;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.p-item{
+  -webkit-box-flex: 1;
+  flex: 1 1 41%;
+  font-size: 13px;
+  margin-top: 3px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.p-comment{
+  white-space: pre-wrap;
+}
+  

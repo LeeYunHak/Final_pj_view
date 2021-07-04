@@ -1,0 +1,390 @@
+
+*{box-sizing: border-box;}
+
+
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -25vh;
+    right: 15vh;
+    height: 7.7vh;
+    width: 202vh;
+    /* height: 60px; */
+    padding: 1vh;
+    color: rgb(0,206,201);
+    /* background: rgb(229, 250, 249); */
+    border-bottom: solid 1px #c8c8c8;
+    font-weight: bold;
+    display: flex;/*한줄로 나오게*/
+    justify-content: space-between;/*정렬*/
+    align-items: center;
+    font-size: 35px;
+    z-index: 1;
+    background-color: white
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navi{
+    /* margin-bottom: 15px;
+    margin-right: 500px; */
+    /* padding-left: 20vh; */
+    left: 10vh;
+    padding-bottom: 2vh;
+    /* margin-top: 40px; */
+    /* overflow:hidden; */
+}
+
+a.dreamer{
+    text-decoration: none; color: rgb(0, 206, 201);
+    position: fixed;
+    left: 25vh;
+    top: -1vh;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px rgb(162, 162, 162);
+}
+
+#selectnavi{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0,206,201);
+    font-size: 2.2vh;
+    /* left: 250vh; */
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+
+  #resume{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+  #matchup{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-right: 2vh;
+    z-index: 1;
+  }
+
+  .mp{
+    height: 5vh;
+    width: 17vh;
+    float: right;
+  }
+
+
+  #search1{
+    margin-top: 2vh;
+    cursor: pointer;
+  }
+
+  #mypage1{
+    margin-top: 2vh;
+    float: right;
+    cursor: pointer;
+  }
+  /* 공백 */
+  .blank{
+      height: 65px;
+  }
+
+  .resume-list-container{
+    width: 90%;
+    margin: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+  }
+
+  .resume-list-header{
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+
+  .resume-list-header>h4{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    padding: 15px 0;
+    color: #333;
+  }
+
+  .resume-list-content{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 40px);
+  }
+
+  .resume-list-content::after{
+      clear: both;
+      content: "";
+      display: block;
+  }
+
+  .resume-item{
+      float: left;
+      position: relative;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: calc(25% - 25px);
+      background-color: #fff;
+  }
+
+  .resume-box{
+      height: 190px;
+      position: relative;
+      flex: 1;
+      border: 1px solid #DBDBDB;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .resume-add-btn{
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 3px;
+        background-color: #fff;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 116px;
+
+  }
+
+  .box-dreamer{
+      background: rgb(0,206,201);
+      cursor: pointer;
+      width: 74px;
+      height: 74px;
+      margin: 0 auto;
+      border-radius: 50%;
+  }
+
+  .resume-icon{
+    line-height: 74px;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    cursor: pointer;
+  }
+  .resume-icon::before{
+    content: url(images/006-pencil.png);
+  }
+
+  .wrapper>p{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    margin: 20px 0 0;
+  }
+
+  .wrapper>.box{
+    cursor: pointer;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #e1e2e3;
+  }
+
+  .upload-icon{
+    line-height: 74px;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    color: #666;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
+  .upload-icon::before{
+    content: url(images/199-upload2.png);
+  }
+
+  input[type="file"]{
+    display: block;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+  input, input:focus{
+    outline: none;
+    box-shadow: none;
+    
+  }
+
+  /* 클릭이벤트 시 추가되는 것들 */
+  .resume-box{
+    height: 190px;
+    position: relative;
+  }
+
+  .resume-preview{
+    height: calc(100% - 40px);
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+  }
+  .writing{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    max-height: 46px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .date{
+    color: #999999;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  .resume-info{
+    position: relative;
+    padding: 10px 20px;
+  }
+
+  .resume-status{
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 44px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .writing-span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  .dropdown-btn-group{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+  }
+
+  .dropdown-btn{
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    user-select: none;
+  }
+
+  .dr-icon{
+    display: block;
+    font-size: 24px;
+  }
+  
+  .dr-icon::before{
+    content: url(images/420-flickr.png);
+  }
+
+  .dropdown-menu{
+    top: 65%;
+    border-radius: 0;
+    border: 1px solid #d2d2d2;
+    left: auto;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #fff;
+    background-clip: padding-box;
+  }
+
+  .gr-a{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #272b33;
+    white-space: nowrap;
+  }
