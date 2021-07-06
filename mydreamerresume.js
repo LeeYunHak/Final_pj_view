@@ -1,19 +1,73 @@
+/*네비바 */
+document.getElementById('nav3-2-Select').addEventListener('mouseover', function() {
+
+  document.getElementsByClassName('opennavi')[0].style.display ='block'
+});
+document.getElementsByClassName('opennavi')[0].addEventListener('mouseover', function() {
+
+  document.getElementsByClassName('opennavi')[0].style.display ='block'
+});
+document.getElementsByClassName('opennavi')[0].addEventListener('mouseout', function() {
+
+  document.getElementsByClassName('opennavi')[0].style.display ='none'
+});
+
+document.getElementById('nav3-7-MyPage').addEventListener('click', function() {
+
+  document.getElementsByClassName('arrow_box')[0].style.display ='block'
+});
+document.getElementsByClassName('arrow_box')[0].addEventListener('mouseover', function() {
+
+  document.getElementsByClassName('arrow_box')[0].style.display ='block'
+});
+document.getElementsByClassName('arrow_box')[0].addEventListener('mouseout', function() {
+
+  document.getElementsByClassName('arrow_box')[0].style.display ='none'
+});
+
+/*모달*/
+document.getElementById('resumeselectbtn').addEventListener('click', function() {
+    modal('my_modal');
+});
+
 /*이력서를 선택하면 메세지가 바뀜*/
 function changeByJS() {
     let x = document.getElementsByClassName("warn")[0];
     x.innerText="선택한 이력서의 내용으로 프로필이 교체됩니다."; 
     x.style.color="red";
- }
-// function changeByJS() {
-//     let x = document.getElementsByClassName("mo_name")[0];
-//     x.innerText="선택한 이력서의 내용으로 프로필이 교체됩니다."; 
-//     x.style.color="red";
-//  }
+}
 
+/*클릭하면 테두리색 변경*/
+var selected = document.getElementsByClassName("selected");
 
-document.getElementById('resumeselectbtn').addEventListener('click', function() {
-    modal('my_modal');
-});
+function handleClick(event) {
+  if (event.target.classList[1] === "clicked") {
+    event.target.classList.remove("clicked");
+  } else {
+    for (var i = 0; i < selected.length; i++) {
+      selected[i].classList.remove("clicked");
+    }
+    event.target.classList.add("clicked");
+  }
+}
+function init() {
+  for (var i = 0; i < selected.length; i++) {
+    selected[i].addEventListener("click", handleClick);
+  }
+}
+init();
+
+/*수정완료*/
+
+// function init() {
+//     mo_submit.addEventListener("click", function () {
+//         modal.classList.add("mo_close")
+        
+//     })
+// }
+
+// $("dt").text();
+
 
 function modal (id){
     var zIndex = 9999;
@@ -38,6 +92,7 @@ function modal (id){
         bg.remove();
         modal.style.display = 'none';
     });
+
     modal.setStyle({
         position: 'fixed',
         display: 'block',

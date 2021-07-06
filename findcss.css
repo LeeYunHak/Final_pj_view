@@ -1,39 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-header {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0px;
-    right: 0px;
-    height: 70px;
-    padding: 1px;
-    color: rgb(0, 206, 201);
-    background: rgb(229, 250, 249);
-    font-weight: bold;
-    display: flex;
-    /*한줄로 나오게*/
-    justify-content: space-between;
-    /*정렬*/
-    align-items: center;
-    font-size: 35px;
-    z-index: 999 !important;
-}
 body{
     letter-spacing: 0;
     font-size: 13px;
-    font-family: MetroSans;
     font-weight: 400;
 }
 
-a.dreamer {
-    text-decoration: none;
-    color: rgb(0, 206, 201);
-    position: fixed;
-    left: 300px;
+li {
+	list-style-type: none;
 }
+
+/* 네비게이션바 CSS START */
+
+header{
+    top: 0;
+    height: 60px;
+}
+
+#nav1 {
+	display: block;
+	background: white;
+	/* border-bottom: solid 1px black; */
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+#nav2 {
+	display: block;
+	background-color: white;
+	border-bottom: solid 1px #c8c8c8;
+	width: 100%;
+	overflow: hidden;
+	line-height: 100%;
+	/* padding-top: 2px;
+	padding-bottom: 2px; */
+	padding-inline-start: 40px;
+	padding-inline-end: 40px;
+    z-index: 99;
+    height: 100px;
+}
+
+#nav3 {
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100%;
+}
+
+.logo {
+	width: 180px;
+	height: 50px;
+	padding-top: 10px;
+}
+
+#nav3-1-logo {
+	/* display: block;
+	cursor: pointer;
+	padding-left: 40px;
+	padding-right: 40px; */
+	padding: 0px;
+}
+
+
 
 h3 {
     margin-top: 20px;
@@ -48,14 +84,14 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
+/* 
 .nav {
     position: relative;
     margin-top: -15px;
     margin-left: 1000px;
-}
+} */
 div.container-margin-top-80{
-    margin-top: 80px !important;
+    margin-top: 120px !important;
     width: 1024px;
     margin-right: auto;
     margin-left: auto;

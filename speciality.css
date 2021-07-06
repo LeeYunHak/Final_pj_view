@@ -1,18 +1,18 @@
 /* 마이드리머 CSS파일 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-*{box-sizing: border-box;}
 
 /* 공통 CSS START */
 * {
 	margin: 0 auto;
 	padding: 0 auto;
+	box-sizing: border-box;
 	font-family: 'Nanum Gothic', sans-serif;
 }
-
+/* 
 div {
 	list-style-type: none;
 	display: inline-block;
-}
+} */
 
 li {
 	list-style-type: none;
@@ -253,7 +253,101 @@ ol,ul{
     padding: 0;
     border: 0;
 }
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -25vh;
+    right: 15vh;
+    height: 7.7vh;
+    width: 202vh;
+    /* height: 60px; */
+    padding: 1vh;
+    color: rgb(0,206,201);
+    /* background: rgb(229, 250, 249); */
+    border-bottom: solid 1px #c8c8c8;
+    font-weight: bold;
+    display: flex;/*한줄로 나오게*/
+    justify-content: space-between;/*정렬*/
+    align-items: center;
+    font-size: 35px;
+    z-index: 1;
+    background-color: white
+}
 
+a.dreamer{
+    text-decoration: none; color: rgb(0, 206, 201);
+    position: fixed;
+    left: 25vh;
+    top: -1vh;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px rgb(162, 162, 162);
+}
+
+.mp{
+    height: 5vh;
+    width: 17vh;
+    float: right;
+  }
+
+  #selectnavi{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0,206,201);
+    font-size: 2.2vh;
+    /* left: 250vh; */
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+  #resume{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+  }
+
+#matchup{
+    border: 1px solid rgb(229, 250, 249);
+    background-color: rgb(229, 250, 249);
+    color: rgb(0, 206, 201);
+    font-size: 2.2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-right: 2vh;
+    z-index: 1;
+  }
+
+  #search1{
+    margin-top: 2vh;
+    cursor: pointer;
+  }
+
+  #mypage1{
+    margin-top: 2vh;
+    float: right;
+    cursor: pointer;
+  }
+
+  .navi{
+    /* margin-bottom: 15px;
+    margin-right: 500px; */
+    /* padding-left: 20vh; */
+    left: 10vh;
+    padding-bottom: 2vh;
+    /* margin-top: 40px; */
+    /* overflow:hidden; */
+}
 /* 공백 */
 .Blank{
     height: 50px;
@@ -297,11 +391,11 @@ ol,ul{
 }
 .sidebar-contents{
     background: #fff;
-    border: 1px solid #e1e2e3;
+    border: 1px solid #c8c8c8;
     border-radius: 3px;
 }
 .sidebar-contents>div{
-    border-top: 1px solid #e1e2e3;
+    border-top: 1px solid #c8c8c8;
 }
 /* 사이드바 상단부터 첫번째 */
 .first-contents{
@@ -467,139 +561,82 @@ input[type="file" i]{
 .m-contents{
     padding-left: 270px;
 }
-/* 지원현황 */
+/* 이력서 */
 .status{
     background: #fff;
-    border: 1px solid #e1e2e3;
+    border: 1px solid #c8c8c8;
     border-radius: 5px;
     margin: 0 0 20px;
-    padding: 26px 0 34px;
+    padding: 26px 0 25px;
 }
-/* 지원현황 h2 */
-.status-h2{
+
+.resume{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+}
+
+/* 이력서 h2 */
+.resume-h2{
     font-size: 18px;
-    padding: 0 32px 26px;
+    padding: 0 0px 26px;
     font-weight: 700;
 }
 
-/* 지원현황 ul */
-.m-ul:after{
+.resume1{
+    position: relative;
+    font-size: 16px;
     display: block;
-    content: "";
-    clear: both;
-}
-/* 지원현황 ul>li */
-.m-ul>li:first-of-type{
-    border: none;
 }
 
-.m-ul>li{
-    float: left;
-    width: 25%;
-    border-left: 1px solid #e1e2e3;
-}
-/* a태그 */
-.m-ul>li>a{
+/*이력서선택버튼*/
+.resumeselectbtn{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    margin-top: -2px;
+    text-align: left;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
 }
 
-.m-ul>li>a>em{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1;
-    padding-bottom: 11px;
-    font-style: normal;
-}
 
-.m-ul>li>a>span{
-    font-size: 16px;
-    line-height: 19px;
-}
-/* 북마크쪽 큰틀 */
+/* 전문분야설정쪽 큰틀 */
 .sec-frame{
     background: #fff;
-    border: 1px solid #e1e2e3;
+    border: 1px solid #c8c8c8;
     border-radius: 5px;
+    padding: 26px 0 25px;
 }
 
-.sec-frame>div:first-of-type{
-    border: none;
+.speciality{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
 }
 
-.sec-frame>div{
-    border-top: 1px solid #e1e2e3;
-}
-
-/* 북마크 */
-.bookmark{
-    padding: 26px 30px 30px;
-}
-
-.bookmark>h2{
-    margin: 0;
-    padding: 0;
-    border: 0;
+/* 전문분야 h2 */
+.speciality-h2{
     font-size: 18px;
+    padding: 0 0px 26px;
     font-weight: 700;
-    line-height: 27px;
-    margin-bottom: 30px;
 }
 
-.b-div>ul{
-    margin: -10px;
-    padding: 0;
-}
-b-ul:before{
-    content: "";
-    display: table;
+.speciality1{
+    position: relative;
+    font-size: 16px;
+    display: block;
 }
 
-.bookmark>div>ul>li{
-    width: 24.2%;
-}
-
-.b-div>ul li{
-    width: 25%;
-    padding: 10px;
-    list-style: none;
-    display: inline-block;
-    vertical-align: top;
-}
-
-div.company-margin {
-	float: left;
-	display: block;
-}
-
-a.company-href {
-	margin: 10px;
-	padding: 0;
-	border: 0;
-}
-
-.company-img {
-	padding-bottom: 100%;
-	background-size: cover;
-	background-position: 50%;
-	width: 169.75px;
-	height: 100px;
-	border-radius: 5px;
-	float: left;
-	display: block;
-}
-
-.f-body{
-    text-align: center;
-    float: left;
-  display: block;
-}
-
-.f-body>div{
-    margin: 5px;
-    text-align: center;
+#salary:focus{
+    outline:none;
 }

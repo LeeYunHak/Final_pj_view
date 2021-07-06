@@ -1,0 +1,596 @@
+*{box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 공통 CSS START */
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+div {
+	list-style-type: none;
+	display: inline-block;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* 네비게이션바 CSS START */
+#nav1 {
+	display: block;
+	background: white;
+	/* border-bottom: solid 1px black; */
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+#nav2 {
+	display: block;
+	background-color: white;
+	border-bottom: solid 1px #c8c8c8;
+	width: 100%;
+	overflow: hidden;
+	line-height: 100%;
+	/* padding-top: 2px;
+	padding-bottom: 2px; */
+	padding-inline-start: 40px;
+	padding-inline-end: 40px;
+}
+
+#nav3 {
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100%;
+}
+
+.logo {
+	width: 180px;
+	height: 50px;
+	padding-top: 10px;
+}
+
+#nav3-1-logo {
+	/* display: block;
+	cursor: pointer;
+	padding-left: 40px;
+	padding-right: 40px; */
+	padding: 0px;
+}
+
+#nav3-2-Select,
+#nav3-3-Resume,
+#nav3-4-Bookmark,
+#nav3-5-ConstructionSupport,
+#nav3-6-ProfileName,
+#nav3-7-MyPage {
+	background-color: white;
+	/* 링크 밑줄 제거 */
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+	color: #525252;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: inline-block;
+	padding:20px;
+}
+
+#nav3-7-MyPage {
+	background-color: white;
+	/* 링크 밑줄 제거 */
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+	color: #525252;
+	/* padding-left: 40px;
+	padding-right: 40px; */
+	display: inline-block;
+    padding: 10px;
+}
+#nav3-6-ProfileName{
+	background-color: white;
+	/* 링크 밑줄 제거 */
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+	color: #525252;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: inline-block;
+	padding: 20px;
+}
+
+/*호버*/
+#nav3-2-Select:hover{
+	color: rgb(0, 206, 201);;
+}
+#nav3-3-Resume:hover{
+	color: rgb(0, 206, 201);;
+}
+#nav3-4-Bookmark:hover{
+	color: rgb(0, 206, 201);;
+}
+#nav3-5-ConstructionSupport:hover{
+	color: rgb(0, 206, 201);;
+}
+
+.avatar {
+	width: 30px;
+	height: 30px;
+}
+
+header>div>ul>div>div>ul>li,
+header>div>ul>div>li {
+	display: inline-block;
+	/* height: 50px; */
+}
+/* 네비게이션바 CSS END */
+
+/* 탐색 메뉴~ START */
+.bar {
+	margin: 0 auto;
+	width: 100%;
+	height: 28px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	display: block;
+}
+.opennavi {
+	position: fixed;
+	top: 74px;
+	left: 0px;
+	z-index: 999;
+	background-color: #98fcfa;
+	border: 1px solid #c8c8c8;
+	border-top: none;
+	display: block;
+	display: none;
+	box-shadow: 1px #c8c8c8;
+	/* float: left; */
+}
+div>div>div>ul {
+	padding-left: 0px;
+}
+div>div>div>ul>li {
+	font-size: 15px;
+	color: gray;
+	text-align: center;
+}
+div>div>div>ul>li>input {
+	width: 100px;
+	margin-bottom: 3px;
+	color: black;
+	background-color:#00cecb00;
+	text-align: center;
+}
+/* 탐색 메뉴~ END */
+
+/*마이페이지박스*/
+.arrow_box {
+	width: 120px;
+	height: 170px;
+	text-align: center;
+	position: absolute;
+	background: #ffffff;
+	border: 4px solid rgb(0, 201, 206);
+	display: none;
+	z-index: 9999999;
+}
+
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;z-index: 10000;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 15px;
+	margin-left: -15px;z-index: 10000;
+}
+
+.arrow_box:before {
+	border-color: rgba(96, 185, 245, 0);
+	border-bottom-color: rgb(0, 201, 206);
+	border-width: 21px;
+	margin-left: -21px;z-index: 1000000;
+}
+
+.mydreamer, .profile, .logout{
+	width: 100%;
+	height: 50px;
+}
+
+.blank{
+	width: 100%;
+	height: 20px;
+}
+.blank1{
+	height: 100%;
+	width: 50px;
+}
+.blank2{
+	height: 100%;
+	width: 25px;
+}
+
+/* a{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: black;
+}
+
+a, a:active, a:hover, a:visited {
+    color: inherit;
+} */
+
+ol,ul{
+    list-style: none;
+}
+html{
+    width: 1920px;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    width: 1920px;
+    height: 100%;
+    margin: 0;
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 1920px;
+    height: 100%;
+}
+
+/* 섹션 */
+.sec{
+    margin: 0 auto;
+    width: 1920px;
+    height: 100%;
+    position: relative;
+    padding: 100px;
+    padding-bottom: 0;
+    display: block;
+    border: 0;
+    margin: 0;
+}
+
+/* 화면에 보이는 프레임(틀) */
+.mainFrame{
+    position: relative;
+    width: 1920px;
+    height: 100%;
+}
+
+.mainFrame:after{
+    clear: both;
+}
+
+/*왼쪽div*/
+.company{
+    width: 1200px;
+    height: 100%;
+    float: left;
+}
+
+/*구글맵*/
+#map {
+    width:900px; 
+    height:500px; 
+    clear:both; 
+    border:solid 2px #c8c8c8;
+}
+
+/* 사이드 바 */
+.sidebar{
+    width: 350px;
+    height: 380px;
+    float: left;
+    border:1px solid #c8c8c8;
+    border-radius: 2px;
+    padding-bottom: 10px;
+}
+
+/*버튼설정*/
+#bm{
+    position: relative;
+    margin-left: 20px;
+}
+
+#bookmark{
+    padding-top: 30px;
+}
+
+#bookmarkimg{
+    position: absolute;
+    height: 30px;
+    width: 35px;
+    z-index: 1;
+    top: 16px;
+    left:116px;
+}
+
+
+#bookmarkbtn{
+    color:rgb(0, 206, 201);
+    border: rgb(0, 206, 201) solid 1px;
+    margin-left: 50px;
+    padding: 20px;
+    padding-left: 90px;
+    padding-right: 80px;
+    margin-bottom: 10px;
+    background-color: #ffffff; 
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 15px;
+    height: 62px;
+    width: 222px;
+    position: relative;
+    /* padding-left: 50px; */
+}
+#hirebtn{
+    color:white;
+    border: rgb(0, 206, 201) solid 1px;
+    padding: 20px;
+    margin-left: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: rgb(0, 206, 201); 
+    border-radius: 3px;
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 15px;
+    width: 222px;
+    height: 62px;
+}
+
+/*버튼클릭시*/
+/* #bookmarkbtn:focus{
+    background-color: rgb(0, 206, 201);
+    color: white;
+} */
+
+/*북마크모달*/
+#my_modal1 {
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    display: none;
+}
+
+.ModalHeader1 {
+    height: 54px;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Modal_close_btn1 {
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    float: right;
+}
+
+.ModalBody1{
+    display: block;
+    text-align: center;
+}
+
+#bmcheck{
+    color:#ffffff;
+    border: #ffffff solid 1px;
+    top: 10px;
+    text-align: center;
+    background-color: rgb(0, 206, 201); 
+    border-radius: 3px;
+    cursor: pointer;
+    /* font-weight: bold;  */
+    font-size: 15px;
+    height: 52px;
+    width: 152px;
+    position: relative;
+    /* padding-left: 50px; */
+}
+/*지원하기 모달*/
+#my_modal2 {
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 700px;
+    display: none;
+}
+
+.ModalHeader2 {
+    height: 54px;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.Modal_close_btn2 {
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    float: right;
+}
+
+.ModalBody2{
+    display: block;
+    text-align: center;
+}
+
+#bmcheck{
+    color:#ffffff;
+    border: #ffffff solid 1px;
+    top: 10px;
+    text-align: center;
+    background-color: rgb(0, 206, 201); 
+    border-radius: 3px;
+    cursor: pointer;
+    /* font-weight: bold;  */
+    font-size: 15px;
+    height: 52px;
+    width: 152px;
+    position: relative;
+    /* padding-left: 50px; */
+}
+
+/*라벨설정*/
+.name, .email, .phone {
+    max-width: 100%;
+    font-weight: bold;
+}
+
+/*이름,이메일*/
+label{
+    float: left;
+    left: 20px;
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.1;
+    display: block;
+    /* margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    position: relative;
+    padding: 15px 0;
+}
+
+/*input설정*/
+input:focus
+    {outline:none;}
+
+/*텍스트박스*/
+#email, #phone {
+    height: 30px;
+    width: 260px;
+    margin: 0;
+    padding: 12px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #c8c8c8;
+    margin-left: 20px;
+}
+
+#name {
+    height: 30px;
+    width: 260px;
+    margin: 0;
+    padding: 12px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #c8c8c8;
+    margin-left: 34px;
+}
+
+/*숫자조절버튼삭제*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#re1, #re2{
+    color:#969696;
+    border: #c8c8c8 solid 1px;
+    /* margin-left: 50px; */
+    padding: 20px;
+    /* padding-left: 90px;
+    padding-right: 80px; */
+    margin-bottom: 10px;
+    background-color: #c8c8c8; 
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 15px;
+    height: 42px;
+    width: 300px;
+    position: relative;
+    line-height:0px;
+}
+
+/*지원하기모달의 버튼*/
+#upload, #write {
+    color:rgb(0, 206, 201);
+    border: rgb(0, 206, 201) solid 1px;
+    /* margin-left: 50px; */
+    padding: 20px;
+    /* padding-left: 90px;
+    padding-right: 80px; */
+    margin-bottom: 10px;
+    background-color: #ffffff; 
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 15px;
+    height: 42px;
+    width: 300px;
+    position: relative;
+    /* padding-left: 50px; */
+    line-height:0px;
+}
+#app{
+    color:white;
+    border: rgb(0, 206, 201) solid 1px;
+    padding: 20px;
+    /* margin-left: 50px; */
+    /* padding-left: 80px;
+    padding-right: 80px; */
+    background-color: rgb(0, 206, 201); 
+    border-radius: 3px;
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 15px;
+    width: 300px;
+    height: 42px;
+    line-height:0px;
+}
+

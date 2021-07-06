@@ -99,6 +99,7 @@ addBtn.addEventListener('click',function(){
             ul.style.display='none';
         }
     })
+    // location.href='CV-write.html'
 });
 
 function cli(id){
@@ -114,4 +115,10 @@ Element.prototype.setStyle = function(styles) {
     for (var k in styles) this.style[k] = styles[k];
     return this;
 };
+
+
+addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click',function(){
+    location.href='CV-write.html'
+},100000)
 

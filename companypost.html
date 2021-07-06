@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mydreamermodify.css">
-    <title>Mydreamer</title>
+    <link rel="stylesheet" href="companypost.css">
+    <title>기업 구인글 페이지</title>
 </head>
 <body>
     <div class="full">
@@ -41,7 +41,7 @@
                             <div>
                                 <a id="nav3-7-MyPage"><img class="avatar" src="images/avatar.png"></a>
                                 <div class="arrow_box">
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p>
                                     </div>
                                     <div class="mydreamer"><a href="mydreamer.html"
@@ -53,7 +53,7 @@
                                     <div class="logout"><a href="mainhtml.html"
                                             style="text-decoration: none;color: #00cec9;">
                                             로그아웃</a></div>
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p>
                                     </div>
                                 </div>
@@ -69,6 +69,7 @@
         </div>
     </header>
     <!-- 네비게이션바 END -->
+
     <!-- 탐색 -->
     <div class="bar">
         <div class="opennavi" style="width: 100%; height: 237px; text-align: right;">
@@ -172,68 +173,96 @@
             </div>
         </div>
     </div>
-        <div class="Blank"></div>
-        <section class="sec">
-            <h2 class="subheading">프로필</h2>
-            <div class="mainFrame">
-                <aside class="sidebar">
-                    <div class="sidebar-contents">
-                        <div class="first-contents">
-                            <div class="profile-img" style="background-image: url('https://lh3.googleusercontent.com/a/AATXAJxUk7k9zuTifNm76mAqm6ti2Ca9Z96pTotTHEv1=s96-c');">
-                                <div class="img-input">
-                                    <input type="file" accept="image/*">
-                                    <i class="fi-fi-camera" role="presentation"></i>
-                                    <!-- <i class="camer_icon" role="presentation"></i> -->
-                                </div>
-                            </div>
-                            <a href="#" class="myprofile_a"> <!--주소에 프로필설정창가게 하셈-->
-                                <dl>
-                                    <dt id="namename" class="namename">이윤학</dt><!-- ${.userName}-->
-                                    <dd>dbsgkr23@naver.com</dd><!--${.userEmail}-->
-                                    <dd>010-0000-0000</dd><!--${.userPhone}-->
-                                </dl>
-                            </a>
-                        </div>
-                        <div class="second-contents">
-                            <div class="sc-div">
-                                <a href="#" class="sc-div-a">
-                                    <span>받은 제안</span>
-                                    <strong>0</strong> <!--받은 제안 수-->
-                                </a>
-                            </div>
-                        </div>
-                        <div class="third-contents">
-                            <a href="#">계정 설정</a> <!--계정 설정으로 가는링크-->
-                        </div>
-                    </div>
-                </aside>
-                <section class="m-contents">
-                    <div class="status">
-                        <dl class="Form-title">
-                            <dt style="    color: #333;font-size: 20px;font-weight: 600;line-height: 1;display: block;">기본정보 수정</dt>
-                            <dd style="margin-top: 18px;color: #9a9a9a;font-size: 16px;font-weight: 400;line-height: 1.8;margin-left: 0;">지원 결과 또는 추천 포지션 정보를 받아볼 이메일/연락처 정보 입력해주세요.</dd>
-                        </dl>
-                        <div class="modifyform">
-                            <div class="FormBlock-content content" style="padding-right: 20px;padding-left: 20px;">
-                            <label for="name" class="name"><h6>이름</h6><input id="name" type="text" autocomplete="off" value="이윤학"></label>
-                            <label for="pwd" class="pwd"><h6>비밀번호</h6><input id="password" type="password" autocomplete="off" value="*******"></label>
-                            <label for="email" class="email"><h6>이메일</h6><input id="email" type="email" autocomplete="off" value="dbsgkr23@naver.com"></label>
-                            <div class="phone"><h6 class="MobileInput-label">연락처</h6>
-                                <div class="phoneInput">
-                                <input id="mobile" class="phonenumInput" type="text" placeholder="(예시) 01034567890" value="01000000000">
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="FormFooter">
-                        <button type="button" id="resign" class="resign" onclick="location.href='mainhtml.html'">회원탈퇴하기</button>    
-                        <button type="button" id="submit" class="submit">확인</button></footer>    
-                    </section>
-            </div>
-        </section>
-    </div>
-    <script type="text/javascript" src="mydreamermodify.js"></script>
 
+        <div class="sec">
+            <div class="mainFrame">
+                <div class="company" style="width: 950px;">
+                    <div style="height: 700px;">
+                        <div><img src="images/movie.jpg" style="width: 900px; height: 500px;border:solid 2px #c8c8c8;"> </div>   
+                        <div><p>기업 소개 내용/자격요건/우대사항 내용</p></div> 
+                    </div>
+                    <div style="height: 600px;">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                        <h2 style="text-align: center; margin-top: 70px;">기업 이름</h2>
+                        <div id="bookmark" style="width: 300px; margin-top: 50px;">
+                            <div id="bm" class="bm">
+                                <input type="button" value="북마크" id="bookmarkbtn" class="bookmarkbtn" onclick="alert('북마크에 저장되었습니다.');return false;" >
+                                <img id="bookmarkimg" class="bookmarkimg" name="bookmarkimg" src="images/bookmark.png" style="cursor: pointer;">    
+                            </div>                          
+                           
+                            <div id="hi"><input type="button" value="채용하기" id="hirebtn"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="my_modal1">
+            <div class="ModalHeader1" style="text-align: center;">
+                <span style="text-align: center; margin-right: -25px; font-size: 20px;" >북마크에 저장되었습니다.</span>
+                <button type="button" class="Modal_close_btn1">X</button>
+            </div>
+            <div class="ModalBody1">
+                <input type="button" onclick="javascript:location.href='mydreamer.html'" value="북마크 확인하기" id="bmcheck">
+            </div>
+        </div> -->
+
+        <div id="my_modal2">
+            <div class="ModalHeader2" style="text-align: center;">
+                <span style="text-align: center; font-size: 20px;" >지원하기</span>
+                <button type="button" class="Modal_close_btn2">X</button>
+            </div>
+            <div class="ModalBody2">
+                <div>
+                    <h4 style="text-align: left; margin-left: 20px;">지원 정보</h4>
+                    <form name="info" action="companypost.html" method="POST">
+                        <label for="name" class="name">이름<input required id="name" type="text" autocomplete="off"></label>
+                        <label for="email" class="email">이메일<input required id="email" type="email" autocomplete="off"></label>
+                        <label for="phone" class="phone">연락처<input required id="phone" type="number" autocomplete="off"></label>
+                    </form>
+                    <div style="border-bottom: 1px solid #e1e2e3; height: 200px; width: 360px; margin-left: 20px;"></div>
+                </div>
+                <div>
+                    <h4 style="text-align: left; margin-left: 20px; ">첨부파일</h4>
+                    <div style="margin-bottom: 20px;">
+                        <input type="button" id="re1" class="re1" value="이력서1                                        X">
+                        </input>
+                        <input type="button" id="re2" class="re2" value="이력서2                                        X">
+                        </input>
+                    </div>
+                    <div>
+                        <input type="button" id="upload" value="파일업로드"
+                        onclick="javascript:location.href='CVpage.html'"></input>
+                        <input type="button" id="write" value="새 이력서 작성"
+                        onclick="javascript:location.href='CV-write.html'"></input>
+                    </div>
+                </div>
+                <footer class="foot">
+                    <div style="width: 360px; margin-left: 20px; border-top: 1px solid #e1e2e3; margin-top: 15px; padding-top: 15px; height: 100px;">
+                        <input type="submit" class="app" id="app" value="제출하기" ></input>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>    
+    <script type="text/javascript" src="companypost.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtJPJok-ic-162wUIyxN5AcctNP3cNKOk&callback=initMap&region=kr"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+    // $('#bm').on({ 
+    //     'click': function() { 
+    //         var src = ($(this).attr('src') === 'images/bookmark.png') 
+    //             ? 'images/bookmark2.png'
+    //             : 'images/bookmark.png'; 
+    //         $(this).attr('src', src); 
+    //     } 
+    // });
+    $('#bm').on({
+        'click': function(){ 
+            $('#bookmarkimg').attr('src','images/bookmark2.png'); 
+        } 
+    });
+    </script>
 </body>
 </html>

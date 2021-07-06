@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        *{
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        
         .join1 {
             margin: auto;
             text-align: center;
@@ -62,15 +68,26 @@
             outline: none;
             box-shadow: 0 0 0 2px rgb(0, 206, 201);
         }
+
+        .logo {
+	    width: 180px;
+	    height: 50px;
+	    padding-top: 10px;
+        }
+
+        #nav3-1-logo {
+	    /* display: block;
+	    cursor: pointer;
+	    padding-left: 40px;
+	    padding-right: 40px; */
+	    padding: 0px;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <button type="button" style="color: rgb(0, 206, 201); background-color: white;
-        font-size: 35px; font-weight: bold ; cursor: pointer; border: none; padding-bottom: 20px;"
-        onclick="location.href='mainhtml.html'"
-        >Dreamer</button>
+        <a id="nav3-1-logo" href="mainhtml.html"><img src="images/Dreamer.png" class="logo"></a>
     </div>
     <div style="border: 1px solid rgb(170, 170, 170); height: 900px;" class="join1">
         <form name="join">
