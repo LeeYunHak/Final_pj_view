@@ -1,0 +1,342 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#frame{
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1060px;
+    height: 100%;
+}
+
+/* 네비 */
+.navbar{
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: rgb(28, 28, 28);
+}
+
+.nav-con{
+    position: relative;
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.logo-f{
+}
+
+.nv{
+    float: left;
+    position: relative;
+    margin: 0px;
+}
+
+.nv-st{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.nv-it{
+    float: left;
+    user-select: none;
+}
+
+
+
+.nv-st::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nv-it>a{
+    padding-right: 0px;
+    padding-left: 0px;
+    color: white;
+    padding: 1.2rem 1.6rem 1.6rem;
+    display: block;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.user{
+    padding: 6px 0px 0px;
+    position: relative;
+    float: right;
+}
+
+.u-name{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.u-log{
+
+}
+
+.log-btn{
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 0px;
+    background: transparent;
+    height: 3.6rem;
+}
+
+.select-ic{
+    margin: 0px 1rem;
+    transition: transform 0.2s ease 0s;
+    display: inline-block;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.select-ic::before{
+    content:url(images/337-ctrl.png);
+}
+
+.home-btn{
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+}
+/* 네비 끝 */
+
+.content{
+    position: relative;
+    flex: 1 0 auto;
+    background: white;
+}
+
+.ct-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+}
+
+.ct-h2{
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    color: rgb(51, 51, 51);
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 40px 0px 0px;
+}
+
+.ct-h4{
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    color: rgb(117, 117, 117);
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    word-break: keep-all;
+    margin-bottom: 40px;
+}
+
+.form-half{
+    margin-left: -30px;
+    margin-right: -30px;
+    width: calc(100% + 60px);
+}
+
+.form-half::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.form-half-left{
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: calc(50% - 45px);
+    float: left;
+}
+
+.form-half-left-label{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.form-half-left-label::after{
+    content: "*";
+    color: red;
+    margin-left: 2px;
+}
+
+.ip-txt-h{
+    appearance: none;
+    box-sizing: border-box;
+    resize: none;
+    color: rgb(51, 51, 51);
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    padding: 1.4rem 1.5rem;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.form-fullsz{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.inp-fullsz{
+    position: relative;
+}
+
+.ipt-txt-f{
+    appearance: none;
+    box-sizing: border-box;
+    resize: none;
+    color: rgb(51, 51, 51);
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    padding: 1.4rem 1.5rem;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.txt-area-ctr{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.txtra-Introduce{
+    appearance: none;
+    box-sizing: border-box;
+    resize: none;
+    color: rgb(51, 51, 51);
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    padding: 1.4rem 1.5rem;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    height: 240px;
+    line-height: 22px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.ft-var{
+    z-index: 1;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    bottom: 0px;
+    width: 100%;
+    height: 71px;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding-top: 10px;
+}
+
+.ft-container{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+    width: 87.72%;
+}
+
+.ft-txt-ctr{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.ft-txt{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+}
+
+.fr-btn-ctr{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.fr-btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 102, 255);
+    padding: 1.4rem 2rem;
+    min-width: 120px;
+    font-size: 1.6rem;
+    border-radius: 25px;
+    height: 50px;
+    font-weight: 600;
+}
