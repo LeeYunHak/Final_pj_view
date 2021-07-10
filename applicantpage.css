@@ -13,20 +13,6 @@ div {
 
 }
 
-ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-li {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border : 0;
-    float: left;
-	list-style-type: none;
-}
-
 html{
     width: 1920px;
     height: 100%;
@@ -82,6 +68,17 @@ a{
     list-style: none;
     white-space: nowrap;
 	width: 100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nv-st>li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+	list-style-type: none;
 }
 /* 
 .nv-it{
@@ -107,9 +104,10 @@ a{
 		line-height: 1.45;
 	}
 	
-	 #nav3-2-login,
-	 #nav3-3-join,
-	 #nav3-4-home{
+	 #nav3-2-announcement,
+	 #nav3-3-humanresource,
+     #nav3-4-applicant_status,
+	 #nav3-5-suggestion_status{
 		 /* 링크 밑줄 제거 */
 		 text-decoration: none;
 		 font-size: 18px;
@@ -217,8 +215,8 @@ a{
 .profile-img{
     display: inline-block;
     position: relative;
-    width: 77px;
-    height: 77px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-size: cover;
     background-position: 50%;
