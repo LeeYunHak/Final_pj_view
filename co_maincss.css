@@ -18,13 +18,13 @@ li {
 }
 
 html{
-    width: 1920px;
+    /* width: 1920px; */
     height: 100%;
     margin: 0;
 }
 
 body{
-    width: 1920px;
+    /* width: 1920px; */
     height: 100%;
     margin: 0;
 }
@@ -33,7 +33,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    width: 1920px;
+    /* width: 1920px; */
     height: 100%;
 }
 
@@ -42,77 +42,177 @@ a{
     color: white;
 }
 
-/* 네비게이션바 CSS START */
-#nav1 {
+
+/* 네비 */
+.logo {
+    width: 180px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+#nav3-1-logo {
 	display: block;
-	background: black;
-	/* border-bottom: solid 1px black; */
-	height: 60px;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	z-index: 100;
-	margin: 0 auto;
-	justify-content: space-between;
-}
-
-#nav2 {
-	display: block;
-	background-color: black;
-	border-bottom: solid 1px #c8c8c8;
-    width: 100%;
-	overflow: hidden;
-	line-height: 100%;
-	/* padding-top: 2px;
-	padding-bottom: 2px; */
-	padding-inline-start: 40px;
-	padding-inline-end: 40px;
-}
-
-#nav3 {
-	padding-left: 40px;
-	padding-right: 40px;
-	line-height: 100%;
-}
-
-#co_dreamer{
-    font-size: 30px;
-    font-weight: bold; 
-}
-
-#nav3-2-login,
-#nav3-3-join,
-#nav3-4-home{
-	background-color: black;
-	/* 링크 밑줄 제거 */
-	text-decoration: none;
-	font-size: 20px;
 	cursor: pointer;
-	color: white;
-	padding-left: 40px;
-	padding-right: 40px;
-	display: inline-block;
-	padding:20px;
+	padding: 0px;
 }
-#nav3-1-blank{
-	background-color: black;
-	/* 링크 밑줄 제거 */
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-	padding-left: 40px;
-	padding-right: 40px;
-	display: inline-block;
-	padding:20px;
+.navbar{
+    flex: 0 0 auto;
+    height: 60px;
+    background-color: rgb(28, 28, 28);
+}
+
+.nav-con{
+    position: relative;
+    width: 1300px;
+    /* max-width: 1500px; */
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.nv{
+    float: left;
+    position: relative;
+    margin: 0px;
+	width: 100%;
+}
+
+.nv-st{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    white-space: nowrap;
+	width: 100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nv-st>li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+	list-style-type: none;
+}
+
+/* 
+.nv-it{
+    float: left;
+    user-select: none;
+}
+ */
+
+ 
+ .nv-st::after{
+	 clear: both;
+	 content: "";
+	 display: block;
+	}
+	
+	.nv-home{
+		padding-right: 0px;
+		padding-left: 0px;
+		color: white;
+		padding: 1.2rem 1.6rem 1.6rem;
+		display: block;
+		font-size: 20px;
+		line-height: 1.45;
+	}
+	
+	 #nav3-2-login,
+	 #nav3-3-join{
+		 /* 링크 밑줄 제거 */
+		 text-decoration: none;
+		 font-size: 18px;
+		 cursor: pointer;
+		 color: white;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 display: inline-block;
+		 padding:20px;
+	 }
+	 #nav3-1-blank{
+	
+		 /* 링크 밑줄 제거 */
+		 text-decoration: none;
+		 font-size: 18px;
+		 color: white;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 display: inline-block;
+		 padding:20px;
+	 }
+
+.user{
+    padding: 6px 0px 0px;
+    position: relative;
+    float: right;
+}
+
+.u-name{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
 }
 
 
-header>div>ul>div>div>ul>li,
-header>div>ul>div>li {
-	display: inline-block;
-	/* height: 50px; */
+.log-btn{
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 0px;
+    background: transparent;
+    height: 3.6rem;
 }
-/* 네비게이션바 CSS END */
+
+.select-ic{
+    margin: 0px 1rem;
+    transition: transform 0.2s ease 0s;
+    display: inline-block;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.select-ic::before{
+    content:url(images/337-ctrl.png);
+}
+
+.userimg{
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-size: cover;
+	
+}
+
+.home-btn{
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+	margin-top: 8px;
+}
+
+/* 네비 끝 */
 
 
 .blank{
@@ -126,15 +226,10 @@ header>div>ul>div>li {
 
 /* 섹션 */
 .sec{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+	/* width: 1300px; */
+	margin-top: 100px; 
+	height: 100%;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 0;
-    display: block;
-    border: 0;
-    margin: 0;
 }
 
 /* 화면에 보이는 프레임(틀) */
@@ -155,15 +250,16 @@ header>div>ul>div>li {
     background-color: #fff;
     position: absolute;
     overflow: hidden;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     display: none;
     z-index: 99;
 }
 
 .ModalHeader1 {
     height: 54px;
-    padding: 16px 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     position: relative;
     text-align: center;
     font-size: 16px;
@@ -192,29 +288,31 @@ header>div>ul>div>li {
     color:black;
     border: #c8c8c8 solid 1px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 3px;
     font-weight: bold; 
     font-size: 15px;
     height: 40px;
-    width: 480px;
+    width: 450px;
     position: relative;
     line-height:0px;
 }
-/* 
-#bmcheck{
-    color:#ffffff;
-    border: #ffffff solid 1px;
-    top: 10px;
-    text-align: center;
-    background-color: rgb(0, 206, 201); 
+#upload{
+    color:white;
+    border: rgb(0, 206, 201) solid 1px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #04bfbf; 
     border-radius: 3px;
     cursor: pointer;
+    font-weight: bold; 
     font-size: 15px;
-    height: 52px;
-    width: 152px;
+    height: 42px;
+    width: 480px;
     position: relative;
-} */
+    line-height:0px;
+    margin-top: 30px;
+}
 
 /*채용담당자 로그인 모달*/
 #my_modal2 {
@@ -223,7 +321,7 @@ header>div>ul>div>li {
     position: absolute;
     overflow: hidden;
     width: 500px;
-    height: 455px;
+    height: 500px;
     display: none;
 }
 
@@ -274,22 +372,7 @@ input:focus
     line-height:0px;
 }
 
-/*지원하기모달의 버튼*/
-#upload{
-    color:white;
-    border: rgb(0, 206, 201) solid 1px;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: #04bfbf; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 42px;
-    width: 480px;
-    position: relative;
-    line-height:0px;
-}
+/*비밀번호변경 모달로 가는 버튼*/
 #change {
     color:white;
     border: rgb(0, 206, 201) solid 1px;
@@ -305,4 +388,6 @@ input:focus
     position: relative;
     line-height:0px;
 }
+
+
 

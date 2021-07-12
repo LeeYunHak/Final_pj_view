@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="applicantpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>회사 이미지</title>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <title>기업서비스 메인 페이지(로그인 전)</title>
+    <link rel="stylesheet" href="Company-image.css">
 </head>
 <body>
     <div class="full">
@@ -42,37 +39,15 @@
             </div>
         </header>
         <!-- 네비게이션바 END -->
-        
-        <div class="sec">
-            <div class="mainFrame">
-                <div class="applicant">
-                    <div style="margin-bottom: 100px; padding-left: 15px;">
-                        <div class="profile-img" style="background-image: url('https://lh3.googleusercontent.com/a/AATXAJxUk7k9zuTifNm76mAqm6ti2Ca9Z96pTotTHEv1=s96-c'); float: left;"></div>   
-                        <div style="margin-left: 200px; padding-top: 20px;">
-                            <h5 style="line-height: 30px;">지원자 이름</h5>
-                            <h5 style="line-height: 30px;">전화번호</h5>
-                            <h5 style="line-height: 30px;">이메일</h5>
-                        </div> 
-                    </div>
-                    <div style="height: 600px; padding-left: 15px;">
-                        <h2 style="line-height: 70px;">자기소개</h2>
-                        <h4 style="line-height: 30px;">지역</h4>
-                        <h5 style="line-height: 30px;">서울시 종로구</h5>
-                        <h4 style="line-height: 30px;">최종학력</h4>
-                        <h5 style="line-height: 30px;">용인대학교 졸업</h5>
-                        <h4 style="line-height: 30px;">작품개수</h4>
-                        <h5 style="line-height: 30px;">1</h5>
-                        <h4 style="line-height: 30px;">자기소개 한마디</h4>
-                        <h5 style="line-height: 30px;">안녕하세요</h5>
-                        <h4 style="line-height: 30px;">마이페이지에서 작성한 메인 이력서 내용</h4>
-                        <h5 style="line-height: 30px;">이력서 내용 삽입</h5>
-                    </div>
-                </div>
+        <div class="tab-container">
+            <a href="#"> <!--이미지 수정페이지--><button class="img-btn">이미지</button></a>
+            <a href="#"> <!--이미지 수정페이지--><button class="info-btn">정보</button></a>
+        </div>
+        <div class="cp-image">
+            <div class="sc-container">
+                <h2 class="if-h2">대표 이미지</h2>
             </div>
         </div>
-        
-    </div>  
-    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
-    <script type="text/javascript" src="companypost.js"></script>
+    </div>
 </body>
 </html>

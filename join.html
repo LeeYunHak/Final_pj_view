@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
         *{
             font-family: 'Nanum Gothic', sans-serif;
+            box-sizing: border-box;
         }
         
         .join1 {
@@ -69,26 +73,123 @@
             box-shadow: 0 0 0 2px rgb(0, 206, 201);
         }
 
+        /* 네비게이션바 CSS START */
+
         .logo {
-	    width: 180px;
-	    height: 50px;
-	    padding-top: 10px;
+            width: 180px;
+            height: 50px;
+            padding-top: 10px;
+            }
+        
+        #nav3-1-logo {
+        display: block;
+        cursor: pointer;
+        margin-left: 20px;
+        padding: 0px;
+        }
+        
+        .navbar{
+            flex: 0 0 auto;
+            height: 60px;
+            width: 1600px;
+            /* max-width: 1600px; */
+            background-color: white;
+            /* border-bottom: 1px solid #c8c8c8; */
+            z-index: 100;
+            position: absolute;
+            left: 100px;
+            top: 20px;
+        }
+        
+        .nav-con{
+            position: relative;
+            width: 1600px;
+            /* max-width: 1600px; */
+            margin: 0px auto;
+            padding: 0px 20px;
+        }
+        
+        .nv{
+            float: left;
+            position: relative;
+            margin: 0px;
+            width: 100%;
+        }
+        
+        .nv-st{
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            white-space: nowrap;
+            width: 100%;
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+        
+        .nv-st>li {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border : 0;
+            float: left;
+        list-style-type: none;
+        }
+        
+        .nv-st::after{
+            clear: both;
+            content: "";
+            display: block;
         }
 
-        #nav3-1-logo {
-	    /* display: block;
-	    cursor: pointer;
-	    padding-left: 40px;
-	    padding-right: 40px; */
-	    padding: 0px;
+        #nav3-1-blank{
+
+            /* 링크 밑줄 제거 */
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            padding-left: 40px;
+            padding-right: 40px;
+            display: inline-block;
+            padding:20px;
         }
+        /*네비끝*/
     </style>
 </head>
 
 <body>
-    <div>
+    <!-- 네비게이션바 START -->
+    <header class="navbar">
+        <div class="nav-con">
+            <div style="width: 100%;">
+                <nav class="nv">
+                    <ul class="nv-st">
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                        <li><a id="nav3-1-logo" href="mainhtml.html"><img src="images/Dreamer.png" class="logo"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>                    
+    <!-- <div>
         <a id="nav3-1-logo" href="mainhtml.html"><img src="images/Dreamer.png" class="logo"></a>
-    </div>
+    </div> -->
     <div style="border: 1px solid rgb(170, 170, 170); height: 900px;" class="join1">
         <form name="join">
 

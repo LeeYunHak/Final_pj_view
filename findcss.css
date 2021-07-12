@@ -16,60 +16,85 @@ li {
 
 /* 네비게이션바 CSS START */
 
-header{
-    top: 0;
-    height: 60px;
-}
-
-#nav1 {
-	display: block;
-	background: white;
-	/* border-bottom: solid 1px black; */
-	height: 60px;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	z-index: 100;
-	margin: 0 auto;
-	justify-content: space-between;
-}
-
-#nav2 {
-	display: block;
-	background-color: white;
-	border-bottom: solid 1px #c8c8c8;
-	width: 100%;
-	overflow: hidden;
-	line-height: 100%;
-	/* padding-top: 2px;
-	padding-bottom: 2px; */
-	padding-inline-start: 40px;
-	padding-inline-end: 40px;
-    z-index: 99;
-    height: 100px;
-}
-
-#nav3 {
-	padding-left: 40px;
-	padding-right: 40px;
-	line-height: 100%;
-}
-
 .logo {
-	width: 180px;
-	height: 50px;
-	padding-top: 10px;
-}
+    width: 180px;
+    height: 50px;
+    padding-top: 10px;
+    }
+  
+  #nav3-1-logo {
+  display: block;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 0px;
+  }
+  
+  .navbar{
+    flex: 0 0 auto;
+    height: 60px;
+    width: 1600px;
+    /* max-width: 1600px; */
+    background-color: white;
+    border-bottom: 1px solid #c8c8c8;
+    z-index: 100;
+    position: fixed;
+    left: 100px;
+    top: 0px;
+  }
+  
+  .nav-con{
+    position: relative;
+    width: 1600px;
+    /* max-width: 1600px; */
+    margin: 0px auto;
+    padding: 0px 20px;
+  }
+  
+  .nv{
+    float: left;
+    position: relative;
+    margin: 0px;
+  width: 100%;
+  }
+  
+  .nv-st{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    white-space: nowrap;
+  width: 100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  
+  .nv-st>li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+  list-style-type: none;
+  }
+  
+  .nv-st::after{
+    clear: both;
+    content: "";
+    display: block;
+  }
 
-#nav3-1-logo {
-	/* display: block;
-	cursor: pointer;
-	padding-left: 40px;
-	padding-right: 40px; */
-	padding: 0px;
-}
+  #nav3-1-blank{
 
-
+    /* 링크 밑줄 제거 */
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    padding:20px;
+  }
+/*네비끝*/
 
 h3 {
     margin-top: 20px;
@@ -84,12 +109,7 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-/* 
-.nav {
-    position: relative;
-    margin-top: -15px;
-    margin-left: 1000px;
-} */
+
 div.container-margin-top-80{
     margin-top: 120px !important;
     width: 1024px;

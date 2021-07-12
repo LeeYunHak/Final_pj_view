@@ -1,5 +1,6 @@
 *, ::after, ::before {
     box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 html {
@@ -38,27 +39,36 @@ textarea {
 }
 
 /* 네비 */
+.logo {
+    width: 180px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+#nav3-1-logo {
+	display: block;
+	cursor: pointer;
+	padding: 0px;
+}
 .navbar{
     flex: 0 0 auto;
-    height: 50px;
+    height: 60px;
     background-color: rgb(28, 28, 28);
 }
 
 .nav-con{
     position: relative;
-    width: 1100px;
-    max-width: 1100px;
+    width: 1300px;
+    /* max-width: 1500px; */
     margin: 0px auto;
     padding: 0px 20px;
-}
-
-.logo-f{
 }
 
 .nv{
     float: left;
     position: relative;
     margin: 0px;
+	width: 100%;
 }
 
 .nv-st{
@@ -67,30 +77,67 @@ textarea {
     margin: 0px;
     list-style: none;
     white-space: nowrap;
+	width: 100%;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 
+.nv-st>li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+	list-style-type: none;
+}
+
+/* 
 .nv-it{
     float: left;
     user-select: none;
 }
+ */
 
-
-
-.nv-st::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-
-.nv-it>a{
-    padding-right: 0px;
-    padding-left: 0px;
-    color: white;
-    padding: 1.2rem 1.6rem 1.6rem;
-    display: block;
-    font-size: 16px;
-    line-height: 1.45;
-}
+ 
+ .nv-st::after{
+	 clear: both;
+	 content: "";
+	 display: block;
+	}
+	
+	.nv-home{
+		padding-right: 0px;
+		padding-left: 0px;
+		color: white;
+		padding: 1.2rem 1.6rem 1.6rem;
+		display: block;
+		font-size: 20px;
+		line-height: 1.45;
+	}
+	
+	 #nav3-2-login,
+	 #nav3-3-join{
+		 /* 링크 밑줄 제거 */
+		 text-decoration: none;
+		 font-size: 18px;
+		 cursor: pointer;
+		 color: white;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 display: inline-block;
+		 padding:20px;
+	 }
+	 #nav3-1-blank{
+	
+		 /* 링크 밑줄 제거 */
+		 text-decoration: none;
+		 font-size: 18px;
+		 color: white;
+		 padding-left: 40px;
+		 padding-right: 40px;
+		 display: inline-block;
+		 padding:20px;
+	 }
 
 .user{
     padding: 6px 0px 0px;
@@ -105,9 +152,6 @@ textarea {
     margin-right: 1rem;
 }
 
-.u-log{
-
-}
 
 .log-btn{
     font-size: 14px;
@@ -140,6 +184,15 @@ textarea {
     content:url(images/337-ctrl.png);
 }
 
+.userimg{
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-size: cover;
+	
+}
+
 .home-btn{
     font-size: 14px;
     cursor: pointer;
@@ -147,9 +200,13 @@ textarea {
     border-radius: 3px;
     color: rgb(255, 255, 255);
     background-color: transparent;
-    padding: 0.8rem 1.5rem;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-weight: 600;
+	margin-top: 8px;
 }
+
 /* 네비 끝 */
 
 .content{

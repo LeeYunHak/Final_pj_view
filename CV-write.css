@@ -1,109 +1,337 @@
-
 *{box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+/* 공통 CSS START */
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
 
-header {
+/* div {
+	list-style-type: none;
+	display: inline-block;
+} */
+
+li {
+	list-style-type: none;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+ol,ul{
+    list-style: none;
+}
+html{
+    /* width: 1920px; */
+    height: 100%;
     margin: 0;
-    position: fixed;
-    top: 0;
-    left: -25vh;
-    right: 15vh;
-    height: 7.7vh;
-    width: 202vh;
-    /* height: 60px; */
-    padding: 1vh;
-    color: rgb(0,206,201);
-    /* background: rgb(229, 250, 249); */
-    border-bottom: solid 1px #c8c8c8;
-    font-weight: bold;
-    display: flex;/*한줄로 나오게*/
-    justify-content: space-between;/*정렬*/
-    align-items: center;
-    font-size: 35px;
-    z-index: 1;
-    background-color: white
+}
+
+body{
+    /* width: 1920px; */
+    height: 100%;
+    margin: 0;
 }
 
 .full{
     margin: 0;
     padding: 0;
     border: 0;
+    /* width: 1920px; */
+    height: 100%;
 }
 
-.navi{
-    /* margin-bottom: 15px;
-    margin-right: 500px; */
-    /* padding-left: 20vh; */
-    left: 10vh;
-    padding-bottom: 2vh;
-    /* margin-top: 40px; */
-    /* overflow:hidden; */
+/* 네비게이션바 CSS START */
+
+
+/* 네비 */
+
+.logo {
+  width: 180px;
+  height: 50px;
+  padding-top: 10px;
 }
 
-a.dreamer{
-    text-decoration: none; color: rgb(0, 206, 201);
-    position: fixed;
-    left: 25vh;
-    top: -1vh;
-    margin-bottom: 50px;
-    text-shadow: 1px 1px rgb(162, 162, 162);
+#nav3-1-logo {
+display: block;
+cursor: pointer;
+margin-left: 40px;
+padding: 0px;
 }
 
-#selectnavi{
-    border: 1px solid rgb(229, 250, 249);
-    background-color: rgb(229, 250, 249);
-    color: rgb(0,206,201);
-    font-size: 2.2vh;
-    /* left: 250vh; */
-    cursor: pointer;
-    background-color: white;
-    border: 0;
-    outline: 0;
-    z-index: 1;
+.navbar{
+  flex: 0 0 auto;
+  height: 60px;
+  width: 1600px;
+  /* max-width: 1600px; */
+  background-color: white;
+  border-bottom: 1px solid #c8c8c8;
+  z-index: 100;
+  position: fixed;
+  left: 100px;
+}
+
+.nav-con{
+  position: relative;
+  width: 1600px;
+  /* max-width: 1600px; */
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.nv{
+  float: left;
+  position: relative;
+  margin: 0px;
+width: 100%;
+}
+
+.nv-st{
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  white-space: nowrap;
+width: 100%;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.nv-st>li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border : 0;
+  float: left;
+list-style-type: none;
+}
+
+.nv-st::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#nav3-2-Select,
+#nav3-3-Resume,
+#nav3-4-Bookmark,
+#nav3-5-ApplicationStatus,
+#nav3-6-ProfileName,
+#nav3-7-MyPage {
+/* 링크 밑줄 제거 */
+text-decoration: none;
+font-size: 18px;
+cursor: pointer;
+padding-left: 40px;
+padding-right: 40px;
+display: inline-block;
+padding:20px;
+height: 60px;
+}
+
+#nav3-2-Select{
+    width: 72px;
+}
+#nav3-3-Resume{
+    width: 90px;
+}
+#nav3-4-Bookmark{
+    width: 90px;
+}
+#nav3-5-ApplicationStatus{
+    width: 108px;
+}
+
+
+#nav3-7-MyPage {
+	background-color: white;
+	/* 링크 밑줄 제거 */
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+	color: #525252;
+	display: inline-block;
+    padding: 10px;
+    width: 50px;
+    height: 59px;
+}
+#nav3-6-ProfileName{
+	background-color: white;
+	/* 링크 밑줄 제거 */
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+	color: #525252;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: inline-block;
+	padding: 20px;
+    width: 68px;
+    height: 59px;
+}
+
+/*호버*/
+#nav3-2-Select:hover{
+color: rgb(0, 206, 201);;
+}
+#nav3-3-Resume:hover{
+color: rgb(0, 206, 201);;
+}
+#nav3-4-Bookmark:hover{
+color: rgb(0, 206, 201);;
+}
+#nav3-5-ApplicationStatus:hover{
+color: rgb(0, 206, 201);;
+}
+
+.avatar {
+width: 30px;
+height: 30px;
+}
+
+#nav3-1-blank{
+
+  /* 링크 밑줄 제거 */
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+  padding:20px;
+}
+
+.userimg{
+margin-top: 10px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-size: cover;
+
+}
+
+.home-btn{
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background-color: grey;
+  background-color: transparent;
+  padding: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-right: 40px;
+}
+
+/* 탐색 메뉴~ START */
+.bar {
+margin: 0 auto;
+width: 100%;
+height: 28px;
+line-height: 30px;
+text-align: center;
+cursor: pointer;
+float: left;
+display: block;
+}
+.opennavi {
+position: fixed;
+top: 60px;
+left: 0px;
+z-index: 999;
+/* background-color: #98fcfa; */
+background-color: #d2d3d9;
+border-top: none;
+display: block;
+display: none;
+box-shadow: 1px #c8c8c8;
+/* float: left; */
+}
+div>div>div>ul {
+padding-left: 0px;
+}
+div>div>div>ul>li {
+font-size: 15px;
+color: gray;
+text-align: center;
+}
+div>div>div>ul>li>input {
+width: 100px;
+margin-bottom: 3px;
+color: black;
+background-color:#00cecb00;
+text-align: center;
+  border: none;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 18px;
+}
+/* 탐색 메뉴~ END */
+
+/*마이페이지박스*/
+.arrow_box {
+  width: 120px;
+  height: 170px;
+  text-align: center;
+  position: absolute;
+  background: #ffffff;
+  border: 4px solid rgb(0, 201, 206);
+  display: none;
+  z-index: 9999999;
+    top: 67px;
+    right: 238px;
+    /* vertical-align: middle; */
   }
-
-
-  #resume{
-    border: 1px solid rgb(229, 250, 249);
-    background-color: rgb(229, 250, 249);
-    color: rgb(0, 206, 201);
-    font-size: 2.2vh;
-    cursor: pointer;
-    background-color: white;
-    border: 0;
-    outline: 0;
-    z-index: 1;
+  
+  .arrow_box:after, .arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;z-index: 10000;
   }
-
-  #matchup{
-    border: 1px solid rgb(229, 250, 249);
-    background-color: rgb(229, 250, 249);
-    color: rgb(0, 206, 201);
-    font-size: 2.2vh;
-    cursor: pointer;
-    background-color: white;
-    border: 0;
-    outline: 0;
-    margin-right: 2vh;
-    z-index: 1;
+  
+  .arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 15px;
+  margin-left: -15px;z-index: 10000;
   }
-
-  .mp{
-    height: 5vh;
-    width: 17vh;
-    float: right;
+  
+  .arrow_box:before {
+  border-color: rgba(96, 185, 245, 0);
+  border-bottom-color: rgb(0, 201, 206);
+  border-width: 21px;
+  margin-left: -21px;z-index: 1000000;
   }
-
-
-  #search1{
-    margin-top: 2vh;
-    cursor: pointer;
+  
+  .mydreamer, .profile, .logout{
+  width: 100%;
+  height: 50px;
+    /* line-height: 20px; */
+    /* top: 50%;
+    transform: translateY(-50%); */
   }
-
-  #mypage1{
-    margin-top: 2vh;
-    float: right;
-    cursor: pointer;
+  
+  .blank0{
+  width: 100%;
+  height: 20px;
+  }
+  .blank1{
+  height: 100%;
+  width: 50px;
+  }
+  .blank2{
+  height: 100%;
+  width: 25px;
   }
 
   #frame{
