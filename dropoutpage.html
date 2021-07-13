@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이력서</title>
-    <link rel="stylesheet" href="Cvpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="dropoutpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>계정설정페이지</title>
 </head>
 <body>
-    <div class="full" name="full">
+    <div class="full">
         <!-- 네비게이션바 START -->
         <header class="navbar">
             <div class="nav-con">
@@ -42,7 +42,7 @@
                                 <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <div>
                                 <div class="arrow_box">
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p>
                                     </div><br>
                                     <div class="mydreamer"><a href="mydreamer.html"
@@ -54,21 +54,21 @@
                                     <div class="logout"><a href="index.html"
                                             style="text-decoration: none;color: #00cec9; font-size: 14px;">
                                             로그아웃</a></div><br>
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p><br>
                                     </div>
                                 </div>
                             </div>
                             <li><a id="nav3-6-ProfileName" type="button"style="color: black; font-size: 15px;">이름</a>
                                 <!-- <li><a id="nav3-1-blank" type="button">&nbsp;</a></li> -->
-                            <li style="float: right;"><button class="home-btn" type="button" onclick="location.href='co_main.html'">기업서비스</button></li>
+                            <li style="float: right;"><button class="home-btn" type="button" onclick=" location.href='co_main.html'">기업서비스</button></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-    <!-- 네비게이션바 END -->
-
+        <!-- 네비게이션바 END -->
+    
         <!-- 탐색 -->
         <div class="bar">
             <div class="opennavi" style="width: 100%; height: 237px; text-align: right;min-width: 1750px;">
@@ -172,43 +172,106 @@
                 </div>
             </div>
         </div>
-    <div class="blank"></div>
-    <div class="resume-list-container">
-        <div id="resume-list">
-            <div class="resume-list-header">
-                <h4>최근 이력서</h4>
+        <div class="main">
+            <div class="sidebar">
+                <h4>&nbsp</h4>
+                <h4>&nbsp</h4>
+                <h5>&nbsp</h5>
+                <h2>계정 설정</h2>
+                <h2>&nbsp</h2>
+                <h2>&nbsp</h2>
+                <a href="accountpage.html">비밀번호 설정</a>
+                <h5>&nbsp</h5>
+                <h5>&nbsp</h5>
+                <a href="dropoutpage.html" style="color: #00cec9;">&nbsp;&nbsp;&nbsp;&nbsp;회원탈퇴</a>
             </div>
-            <div style="max-height:inherit;overflow-y:inherit;height:inherit;">
-                <div class="resume-list-content">
-                    <div class="resume-item">
-                        <div class="resume-box">
-                            <button type="button" id="addBtn" class="resume-add-btn">
-                                <div class="wrapper">
-                                    <div class="box-dreamer">
-                                        <i class="resume-icon"></i>
-                                    </div>
-                                    <p>이력서 작성</p>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-box">
-                            <div class="drop-resume">
-                                <div class="wrapper">
-                                    <div class="box">
-                                        <i class="upload-icon"></i>
-                                    </div>
-                                    <p>파일 업로드</p>
-                                </div>
-                                <input type="file" style="display: none;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="dropout">
+                <h3>탈퇴 시 주의사항</h3>
+                <h3>&nbsp;</h3>
+                <ul style="line-height: 30px; margin-left: 20px;">
+                    <li style="list-style:disc"><h4 style="display: inline-block;">탈퇴 시 회원님의 공고를 포함하여 회원님의 계정에 저장된</h4>
+                    <h4 style="display: inline-block; font-size: 16px; color: tomato;">모든 정보가 영구적으로 삭제되며,<br></h4></li>
+                    <li><h4>다시는 복구할 수 없습니다.</h4></li>
+                    <li style="list-style:disc"><h4 style="display: inline-block;">등록한 공고의 저장을 원하실 경우, 탈퇴 이전에</h4>
+                    <h4 style="display: inline-block; font-weight: bolder; text-decoration: underline;font-size: 16px; color: tomato;">공고 목록 페이지</h4>
+                    <h4 style="display: inline-block;">에서 다운로드 해주세요.</h4></li>
+                    <li style="list-style:disc"><h4 style="display: inline-block;">이상의 내용에 동의하여 탈퇴를 원하실 경우, 아래의 '동의하기' 버튼을 클릭 부탁드립니다.</h4></li>
+                </ul>
+                <input type="submit" class="dropoutbtn" id="dropoutbtn" value="동의하기">
             </div>
         </div>
-    </div>
+
+        <div id="my_modal2">
+            <div>
+                <div class="ModalHeader2" style="text-align: center;">
+                    <span style="text-align: center; font-size: 20px;" >탈퇴하기</span>
+                    <button type="button" class="Modal_close_btn2">X</button>
+                    <div style="width: 102%;border-top: 1px solid #c8c8c8; margin-top: 20px;"></div>
+                </div>
+                <div class="ModalBody2">
+                    <div>
+                        <h3>드리머를 탈퇴하시겠습니까?</h3>
+                    </div>
+                </div>    
+                <footer class="foot">
+                    <input type="button" id="close" class="close" value="닫기">
+                    <input type="submit" id="drop" value="탈퇴하기">
+                </footer>
+            </div>        
+        </div>
+        <div id="my_modal1">
+            <div class="ModalHeader1" style="text-align: center;">
+                <span style="text-align: center; margin-right: -25px; font-size: 20px;" >회원탈퇴가 완료되었습니다.</span>
+                <div style="width: 100%;border-top: 1px solid #c8c8c8; margin-top: 20px;"></div>
+            </div>
+            <div class="ModalBody1">
+                <div>
+                    <h4>그동안 드리머를 이용해주셔서 감사합니다.</h4>
+                    <h6>&nbsp;</h6>
+                    <h6>보다 나은 서비스로 다시 찾아뵙겠습니다.</h6>
+                </div>
+                <footer class="foot">          
+                    <input type="button" id="gohome" value="드리머 첫화면"
+                    onclick="javascript:location.href='index.html'"></input>
+            </footer>
+        </div>
+
+        <!-- <div id="my_modal2">
+            <div>
+                <div class="ModalHeader2" style="text-align: center;">
+                    <span style="text-align: center; font-size: 20px;" >탈퇴하기</span>
+                    <button type="button" class="Modal_close_btn2">X</button>
+                    <div style="width: 102%;border-top: 1px solid #c8c8c8; margin-top: 20px;"></div>
+                </div>
+                <div class="ModalBody2">
+                    <div>
+                        <h3>드리머를 탈퇴하시겠습니까?</h3>
+                    </div>
+                </div>    
+                    <footer class="foot">
+                        <input type="button" id="close" value="닫기">       
+                    <input type="submit" id="drop" value="탈퇴하기"
+                    onclick="javascript:location.href='co_main.html'"></input>
+                    </footer>
+            </div>        
+        </div> -->
+        <!-- <div id="my_modal1">
+            <div class="ModalHeader1" style="text-align: center;">
+                <span style="text-align: center; margin-right: -25px; font-size: 20px;" >회원탈퇴가 완료되었습니다</span>
+                <div style="width: 100%;border-top: 1px solid #c8c8c8; margin-top: 20px;"></div>
+            </div>
+            <div class="ModalBody1">
+                <div>
+                    <h4>그동안 드리머를 이용해주셔서 감사합니다.</h4>
+                    <h6>보다 나은 서비스로 다시 찾아뵙겠습니다.</h6>
+                </div>
+                <footer class="foot">          
+                    <input type="button" id="gohome" value="드리머 첫화면"
+                    onclick="javascript:location.href='index.html'"></input>
+            </footer>
+        </div> -->
+       
+    </div>        
+    <script type="text/javascript" src="dropoutpage.js"> </script>
 </body>
-<script src="CVpage.js"></script>
 </html>

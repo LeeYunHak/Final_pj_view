@@ -49,8 +49,8 @@
         body {
             text-align: center;
             margin: auto;
-            margin-top: 5%;
-            margin-bottom: 10%;
+            width: 100%;
+            height: 100%;
             width: fit-content;    
         }
         td{
@@ -73,12 +73,18 @@
             box-shadow: 0 0 0 2px rgb(0, 206, 201);
         }
 
+        html{
+            min-width: 1000px;
+            height: 100%;
+        }
+
         /* 네비게이션바 CSS START */
 
         .logo {
             width: 180px;
             height: 50px;
             padding-top: 10px;
+            margin-top: 25px;
             }
         
         #nav3-1-logo {
@@ -97,8 +103,6 @@
             /* border-bottom: 1px solid #c8c8c8; */
             z-index: 100;
             position: absolute;
-            left: 100px;
-            top: 20px;
         }
         
         .nav-con{
@@ -126,6 +130,7 @@
             list-style:none;
             margin:0;
             padding:0;
+            top: 0;
         }
         
         .nv-st>li {
@@ -158,39 +163,21 @@
 </head>
 
 <body>
+   <div style="width: 100%; height: 70px; ">
     <!-- 네비게이션바 START -->
-    <header class="navbar">
-        <div class="nav-con">
-            <div style="width: 100%;">
-                <nav class="nv">
-                    <ul class="nv-st">
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li><a id="nav3-1-logo" href="mainhtml.html"><img src="images/Dreamer.png" class="logo"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>                    
+        <ul class="nv-st">
+            <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+            <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+            <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>         
+            <li><a id="nav3-1-logo" href="index.html"><img src="images/Dreamer.png" class="logo"></a>
+            </li>
+        </ul>
+    </div>    
+    <h6>&nbsp</h6>
     <!-- <div>
-        <a id="nav3-1-logo" href="mainhtml.html"><img src="images/Dreamer.png" class="logo"></a>
+        <a id="nav3-1-logo" href="index.html"><img src="images/Dreamer.png" class="logo"></a>
     </div> -->
-    <div style="border: 1px solid rgb(170, 170, 170); height: 900px;" class="join1">
+    <div style="border: 1px solid rgb(170, 170, 170); height: 900px; position: absolute;" class="join1">
         <form name="join">
 
             <div style="font-weight: bolder;" class="join2"> 회원가입</div>
@@ -202,7 +189,7 @@
 
                 <tr>
                     <td colspan="4"><input type="text" required
-                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 30px;
+                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 40px;
                     border-top-left-radius:5px;border-top-right-radius: 5px;
                     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;"
                     name="name" maxlength="12" placeholder="이름을 입력해주세요"><span id="errname"></span></td>
@@ -214,7 +201,7 @@
 
                 <tr>
                     <td colspan="4"><input type="text" required
-                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 30px;
+                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 40px;
                     border-top-left-radius:5px;border-top-right-radius: 5px;
                     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;"
                     name="cel" id="cel" placeholder="휴대폰 번호를 입력해주세요" /></td>
@@ -226,7 +213,7 @@
 
                 <tr>
                     <td colspan="4"><input type="text" required
-                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 30px;
+                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 40px;
                     border-top-left-radius:5px;border-top-right-radius: 5px;
                     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;"
                     name="email" placeholder="이메일을 입력해주세요"><span id="erremail"></span></td>
@@ -238,7 +225,7 @@
 
                 <tr>
                     <td colspan="4"><input type="password" required
-                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 30px;
+                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 40px;
                     border-top-left-radius:5px;border-top-right-radius: 5px;
                     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;"
                     name="pw" placeholder="비밀번호를 입력해주세요"/><span id="errpw"></span></td>
@@ -249,7 +236,7 @@
                 </tr>
                 <tr>
                     <td colspan="4"><input type="password" required
-                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 30px;
+                    style="border: 1px solid rgb(170, 170, 170); width: 300px; height: 40px;
                     border-top-left-radius:5px;border-top-right-radius: 5px;
                     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;"
                     name="checkpw" placeholder="비밀번호를 한번 더 입력해주세요"/><span id="errcheckpw"></span></td>

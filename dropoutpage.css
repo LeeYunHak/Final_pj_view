@@ -1,11 +1,9 @@
-*{box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
 /* 공통 CSS START */
 * {
 	margin: 0 auto;
 	padding: 0 auto;
-	box-sizing: border-box;
+    box-sizing: border-box;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -13,22 +11,19 @@ div {
 	list-style-type: none;
 }
 
-li {
-	list-style-type: none;
-}
-
 a:link, a:visited{
     color: black;
 }
 
-ol,ul{
-    list-style: none;
-}
 html{
     width: 100%;
     height: 100%;
     margin: 0;
-    min-width: 1450px;
+    min-width: 1400px;
+}
+
+li {
+	list-style-type: none;
 }
 
 body{
@@ -45,6 +40,11 @@ body{
     width: 100%;
 }
 
+a{
+    cursor: pointer;
+    text-decoration: none; 
+    font-weight: bold;
+}
 
 /* 네비게이션바 CSS START */
 
@@ -106,13 +106,6 @@ body{
     float: left;
 	list-style-type: none;
 }
-/* 
-.nv-it{
-    float: left;
-    user-select: none;
-}
- */
-
  
 .nv-st::after{
     clear: both;
@@ -185,14 +178,12 @@ body{
 #nav3-5-ApplicationStatus:hover{
 	color: rgb(0, 206, 201);;
 }
-
 .home-btn:hover{
     background-color: #999999b4;
     color: #666;
     border-color: #c8c8c8;
-    }
+}
     
-
 .select-ic{
     margin: 0px 1rem;
     transition: transform 0.2s ease 0s;
@@ -335,144 +326,65 @@ div>div>div>ul>li>input {
 	width: 25px;
 }
 
-/* a{
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: black;
-}
-
-a, a:active, a:hover, a:visited {
-    color: inherit;
-} */
-
-/* 섹션 */
-.sec{
-	width: 80%;
-    max-width: 1300px;
-	margin-top: 100px; 
-	height: 100%;
-    margin-left: 10%;
-}
-
-/* 화면에 보이는 프레임(틀) */
-.mainFrame{
-    position: relative;
-    /* width: 1920px; */
+/*본문 왼쪽 사이드바*/
+.main{
+    width: 1400px;
     height: 100%;
 }
-
-.mainFrame:after{
-    clear: both;
-}
-
-/*왼쪽div*/
-.company{
-    width: 1200px;
-    height: 100%;
-    float: left;
-}
-
-/*구글맵*/
-#map {
-    width:900px; 
-    height:500px; 
-    clear:both; 
-    float: left;
-    border:solid 2px #c8c8c8;
-}
-
-/* 사이드 바 */
 .sidebar{
-    width: 28%;
-    height: 380px;
-    position: absolute;
-    border:1px solid #c8c8c8;
+    float: left;
+    width: 200px;
+    height: 260px;
+    margin-top: 100px;
+    padding-left: 50px;
+    border: 1px solid #c8c8c8;
     border-radius: 2px;
-    padding-bottom: 10px;
-    background-color: white;
-    left: 80%;
-    max-width: 400px;
-    top: 30px;
-    /* margin-left: 20%; */
 }
 
-/*버튼설정*/
-#bm{
-    position: relative;
-    margin-left: 20px;
+.dropout{ 
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 100px;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    padding: 30px;
 }
 
-#bookmark{
-    padding-top: 30px;
+.dropout>ul>li{
+    float: left;
 }
 
-#bookmarkimg{
-    position: absolute;
-    height: 30px;
-    width: 35px;
-    z-index: 1;
-    top: 16px;
-    left:116px;
-}
-
-
-#bookmarkbtn{
-    color:rgb(0, 206, 201);
-    border: rgb(0, 206, 201) solid 1px;
-    margin-left: 50px;
-    padding: 20px;
-    padding-left: 90px;
-    padding-right: 80px;
-    margin-bottom: 10px;
-    background-color: #ffffff; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 62px;
-    width: 222px;
-    position: relative;
-    /* padding-left: 50px; */
-}
-#hirebtn{
-    color:white;
-    border: rgb(0, 206, 201) solid 1px;
-    padding: 20px;
-    margin-left: 70px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer; 
-    font-weight: bold; 
-    font-size: 15px;
-    width: 222px;
-    height: 62px;
-}
-
-/*버튼클릭시*/
-/* #bookmarkbtn:focus{
-    background-color: rgb(0, 206, 201);
+.dropoutbtn{
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
     color: white;
-} */
+    border: none;
+    border-radius: 20px;
+    background-color: #00cec9;
+    margin-left: 224px;
+    margin-top: 40px;
+    cursor: pointer;
+}
 
-/*북마크모달*/
-#my_modal1 {
+/*회원탈퇴모달*/
+#my_modal2 {
     border-radius: 5px;
     background-color: #fff;
     position: absolute;
     overflow: hidden;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 280px;
     display: none;
     z-index: 99;
 }
 
-.ModalHeader1 {
+.ModalHeader2 {
     height: 54px;
-    padding: 16px 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     position: relative;
     text-align: center;
     font-size: 16px;
@@ -480,59 +392,6 @@ a, a:active, a:hover, a:visited {
     word-wrap: break-word;
     display: block;
     margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.Modal_close_btn1 {
-    margin: 0;
-    border: 0;
-    background: none;
-    cursor: pointer;
-    overflow: visible;
-    float: right;
-}
-
-.ModalBody1{
-    display: block;
-    text-align: center;
-}
-
-#bmcheck{
-    color:#ffffff;
-    border: #ffffff solid 1px;
-    top: 10px;
-    text-align: center;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer;
-    /* font-weight: bold;  */
-    font-size: 15px;
-    height: 52px;
-    width: 152px;
-    position: relative;
-    font-weight: bold;
-    /* padding-left: 50px; */
-}
-/*지원하기 모달*/
-#my_modal2 {
-    border-radius: 5px;
-    background-color: #fff;
-    position: absolute;
-    overflow: hidden;
-    width: 400px;
-    height: 700px;
-    display: none;
-}
-
-.ModalHeader2 {
-    height: 54px;
-    padding: 16px 20px;
-    position: relative;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    word-wrap: break-word;
-    display: block;
     margin-bottom: 20px;
 }
 
@@ -548,136 +407,90 @@ a, a:active, a:hover, a:visited {
 .ModalBody2{
     display: block;
     text-align: center;
-    display: inline-block;
+}
+.foot{
+    margin-left: 38px;
+    margin-top: 20px;
 }
 
-#bmcheck{
-    color:#ffffff;
-    border: #ffffff solid 1px;
-    top: 10px;
-    text-align: center;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer;
-    /* font-weight: bold;  */
-    font-size: 15px;
-    height: 52px;
-    width: 152px;
-    position: relative;
-    /* padding-left: 50px; */
-}
-
-/*라벨설정*/
-.name, .email, .phone {
-    max-width: 100%;
-    font-weight: bold;
-}
-
-/*이름,이메일*/
-label{
-    float: left;
-    left: 20px;
-    color: #999;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.1;
-    display: block;
-    /* margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-    position: relative;
-    padding: 15px 0;
-}
-
-/*input설정*/
-input:focus
-    {outline:none;}
-
-/*텍스트박스*/
-#email, #phone {
-    height: 30px;
-    width: 260px;
-    margin: 0;
-    padding: 12px 0;
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    border: 1px solid #c8c8c8;
-    margin-left: 20px;
-}
-
-#name {
-    height: 30px;
-    width: 260px;
-    margin: 0;
-    padding: 12px 0;
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    border: 1px solid #c8c8c8;
-    margin-left: 34px;
-}
-
-/*숫자조절버튼삭제*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-#re1, #re2{
-    color:#969696;
-    border: #c8c8c8 solid 1px;
-    /* margin-left: 50px; */
-    padding: 20px;
-    /* padding-left: 90px;
-    padding-right: 80px; */
-    margin-bottom: 10px;
-    background-color: #c8c8c8; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 42px;
-    width: 300px;
-    position: relative;
-    line-height:0px;
-}
-
-/*지원하기모달의 버튼*/
-#upload, #write {
+#close{
     color:rgb(0, 206, 201);
     border: rgb(0, 206, 201) solid 1px;
-    /* margin-left: 50px; */
     padding: 20px;
-    /* padding-left: 90px;
-    padding-right: 80px; */
     margin-bottom: 10px;
-    background-color: #ffffff; 
+    background-color: white; 
     border-radius: 3px;
     cursor: pointer;
     font-weight: bold; 
     font-size: 15px;
     height: 42px;
-    width: 300px;
+    width: 210px;
     position: relative;
-    /* padding-left: 50px; */
     line-height:0px;
+    margin-top: 30px;
 }
-#app{
+#drop{
     color:white;
     border: rgb(0, 206, 201) solid 1px;
     padding: 20px;
-    /* margin-left: 50px; */
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    background-color: rgb(0, 206, 201); 
+    margin-bottom: 10px;
+    background-color: #04bfbf; 
     border-radius: 3px;
-    cursor: pointer; 
+    cursor: pointer;
     font-weight: bold; 
     font-size: 15px;
-    width: 300px;
     height: 42px;
+    width: 210px;
+    position: relative;
     line-height:0px;
+    margin-top: 30px;
+}
+
+/*탈퇴메세지모달*/
+#my_modal1 {
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 500px;
+    height: 240px;
+    /* display: none; */
+    z-index: 999;
+}
+
+.ModalHeader1 {
+    height: 54px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ModalBody1{
+    display: block;
+    text-align: center;
+}
+
+#gohome{
+    color:rgb(0, 206, 201);
+    border: rgb(0, 206, 201) solid 1px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: white; 
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 15px;
+    height: 42px;
+    width: 150px;
+    position: relative;
+    line-height:0px;
+    margin-right: 22px;
 }
 

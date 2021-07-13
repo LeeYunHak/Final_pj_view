@@ -60,3 +60,20 @@ function jobKindChange(e) {
         target.appendChild(opt);
     }   
 }
+
+// var jobKindU = document.getElementById('jobKindU').value;
+var jobKindU = document.getElementById('jobKindU');
+
+if(jobKindU.value == 'b'){
+    document.getElementById('test').value =num1;
+}
+
+
+var val = jobKindU.options[jobKindU.selectedIndex].value;
+
+console.log(val);
+
+document.getElementById('1').addEventListener('click',function(){
+    document.getElementById('test').value =num1;
+})
+

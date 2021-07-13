@@ -1,11 +1,9 @@
-*{box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
 /* 공통 CSS START */
 * {
 	margin: 0 auto;
 	padding: 0 auto;
-	box-sizing: border-box;
+    box-sizing: border-box;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -28,7 +26,6 @@ html{
     width: 100%;
     height: 100%;
     margin: 0;
-    min-width: 1450px;
 }
 
 body{
@@ -185,14 +182,12 @@ body{
 #nav3-5-ApplicationStatus:hover{
 	color: rgb(0, 206, 201);;
 }
-
 .home-btn:hover{
     background-color: #999999b4;
     color: #666;
     border-color: #c8c8c8;
-    }
+}
     
-
 .select-ic{
     margin: 0px 1rem;
     transition: transform 0.2s ease 0s;
@@ -335,349 +330,375 @@ div>div>div>ul>li>input {
 	width: 25px;
 }
 
-/* a{
+a{
     cursor: pointer;
     margin: 0;
     padding: 0;
     border: 0;
+    /* text-decoration: none; */
     text-decoration: black;
 }
 
 a, a:active, a:hover, a:visited {
     color: inherit;
-} */
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* 공백 */
+.Blank{
+    height: 50px;
+}
 
 /* 섹션 */
 .sec{
-	width: 80%;
-    max-width: 1300px;
-	margin-top: 100px; 
-	height: 100%;
-    margin-left: 10%;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    max-width: 1060px;
+    padding: 0 0 90px;
+    display: block;
+    border: 0;
 }
 
+.subheading{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 50px 0 20px;
+}
 /* 화면에 보이는 프레임(틀) */
 .mainFrame{
     position: relative;
-    /* width: 1920px; */
-    height: 100%;
 }
-
-.mainFrame:after{
-    clear: both;
-}
-
-/*왼쪽div*/
-.company{
-    width: 1200px;
-    height: 100%;
-    float: left;
-}
-
-/*구글맵*/
-#map {
-    width:900px; 
-    height:500px; 
-    clear:both; 
-    float: left;
-    border:solid 2px #c8c8c8;
-}
-
 /* 사이드 바 */
 .sidebar{
-    width: 28%;
-    height: 380px;
+    top: 0;
+    left: 0;
+    width: 250px;
     position: absolute;
-    border:1px solid #c8c8c8;
-    border-radius: 2px;
-    padding-bottom: 10px;
-    background-color: white;
-    left: 80%;
-    max-width: 400px;
-    top: 30px;
-    /* margin-left: 20%; */
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 사이드 바 내용 */
+.sidebar-contents>div:first-of-type{
+    border: none;
+}
+.sidebar-contents{
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 3px;
+}
+.sidebar-contents>div{
+    border-top: 1px solid #e1e2e3;
+}
+/* 사이드바 상단부터 첫번째 */
+.first-contents{
+    border: none;
+    padding: 42px 20px 30px;
+    text-align: center;
+    margin: 0;
 }
 
-/*버튼설정*/
-#bm{
+
+/* 프로필 이미지 */
+.profile-img{
+    display: inline-block;
     position: relative;
-    margin-left: 20px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 이미지 업로드 인풋 */
+.img-input{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 이미지 업로드 인풋에 파일 버튼 숨기는거임 */
+.img-input input[type=file]{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
-#bookmark{
+input[type="file" i]{
+    appearance: none;
+    background-color: initial;
+    align-items: baseline;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+/* 카메라 아이콘 틀 */
+.fi-fi-camera{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    padding: 8px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+/* 카메라 아이콘 */
+.fi-fi-camera:before{
+    content:url("images/016-camera.png")
+}
+
+/* 프로필 이름 누르면 마이프로필 가지는 a태그 */
+.myprofile_a{
+    /* ↓초기화 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* 프로필 dl */
+.myprofile_a>dl{
     padding-top: 30px;
 }
 
-#bookmarkimg{
-    position: absolute;
-    height: 30px;
-    width: 35px;
-    z-index: 1;
-    top: 16px;
-    left:116px;
-}
-
-
-#bookmarkbtn{
-    color:rgb(0, 206, 201);
-    border: rgb(0, 206, 201) solid 1px;
-    margin-left: 50px;
-    padding: 20px;
-    padding-left: 90px;
-    padding-right: 80px;
-    margin-bottom: 10px;
-    background-color: #ffffff; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 62px;
-    width: 222px;
-    position: relative;
-    /* padding-left: 50px; */
-}
-#hirebtn{
-    color:white;
-    border: rgb(0, 206, 201) solid 1px;
-    padding: 20px;
-    margin-left: 70px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer; 
-    font-weight: bold; 
-    font-size: 15px;
-    width: 222px;
-    height: 62px;
-}
-
-/*버튼클릭시*/
-/* #bookmarkbtn:focus{
-    background-color: rgb(0, 206, 201);
-    color: white;
-} */
-
-/*북마크모달*/
-#my_modal1 {
-    border-radius: 5px;
-    background-color: #fff;
-    position: absolute;
+/* 프로필 dt */
+.myprofile_a>dl>dt{
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
-    width: 400px;
-    height: 200px;
-    display: none;
-    z-index: 99;
 }
 
-.ModalHeader1 {
-    height: 54px;
-    padding: 16px 20px;
+/* 프로필 dd */
+.myprofile_a>dl>dd:first-of-type{
+    padding-top: 20px;
+}
+/* 프로필 dd */
+.myprofile_a>dl>dd{
+    font-size: 14px;
+    line-height: 16px;
+    color: #767676;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 0;
+}
+
+.sc-div{
     position: relative;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    word-wrap: break-word;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding: 30px 25px 30px 20px;
 }
-
-.Modal_close_btn1 {
+.sc-div>a:last-of-type{
+    padding: 0;
+}
+.sc-div>a{
+    display: flex;
+    padding-bottom: 23px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    position: relative;
     margin: 0;
     border: 0;
-    background: none;
-    cursor: pointer;
-    overflow: visible;
-    float: right;
 }
-
-.ModalBody1{
-    display: block;
-    text-align: center;
-}
-
-#bmcheck{
-    color:#ffffff;
-    border: #ffffff solid 1px;
-    top: 10px;
-    text-align: center;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer;
-    /* font-weight: bold;  */
-    font-size: 15px;
-    height: 52px;
-    width: 152px;
-    position: relative;
-    font-weight: bold;
-    /* padding-left: 50px; */
-}
-/*지원하기 모달*/
-#my_modal2 {
-    border-radius: 5px;
-    background-color: #fff;
-    position: absolute;
-    overflow: hidden;
-    width: 400px;
-    height: 700px;
-    display: none;
-}
-
-.ModalHeader2 {
-    height: 54px;
-    padding: 16px 20px;
-    position: relative;
-    text-align: center;
+.sc-div>a>span{
     font-size: 16px;
-    font-weight: 600;
-    word-wrap: break-word;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.Modal_close_btn2 {
+    line-height: 17px;
+    font-weight: 500;
     margin: 0;
+    padding: 0;
     border: 0;
-    background: none;
-    cursor: pointer;
-    overflow: visible;
-    float: right;
 }
-
-.ModalBody2{
-    display: block;
-    text-align: center;
-    display: inline-block;
-}
-
-#bmcheck{
-    color:#ffffff;
-    border: #ffffff solid 1px;
-    top: 10px;
-    text-align: center;
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer;
-    /* font-weight: bold;  */
-    font-size: 15px;
-    height: 52px;
-    width: 152px;
+.sc-div>a>strong{
     position: relative;
-    /* padding-left: 50px; */
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
 }
 
-/*라벨설정*/
-.name, .email, .phone {
-    max-width: 100%;
-    font-weight: bold;
+.third-contents{
+    padding: 30px 20px;
 }
 
-/*이름,이메일*/
-label{
+.third-contents>a{
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+/* 사이드바 옆 */
+.m-contents{
+    padding-left: 270px;
+}
+/* 지원현황 */
+.status{
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 26px 0 34px;
+}
+/* 지원현황 h2 */
+.status-h2{
+    font-size: 18px;
+    padding: 0 32px 26px;
+    font-weight: 700;
+}
+
+/* 지원현황 ul */
+.m-ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* 지원현황 ul>li */
+.m-ul>li:first-of-type{
+    border: none;
+}
+
+.m-ul>li{
     float: left;
-    left: 20px;
-    color: #999;
-    font-size: 15px;
+    width: 25%;
+    border-left: 1px solid #e1e2e3;
+}
+/* a태그 */
+.m-ul>li>a{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.m-ul>li>a>em{
     font-weight: 400;
-    line-height: 1.1;
-    display: block;
-    /* margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-    position: relative;
-    padding: 15px 0;
+    font-size: 36px;
+    line-height: 1;
+    padding-bottom: 11px;
+    font-style: normal;
 }
 
-/*input설정*/
-input:focus
-    {outline:none;}
-
-/*텍스트박스*/
-#email, #phone {
-    height: 30px;
-    width: 260px;
-    margin: 0;
-    padding: 12px 0;
-    color: #333;
+.m-ul>li>a>span{
     font-size: 16px;
-    font-weight: 300;
-    border: 1px solid #c8c8c8;
-    margin-left: 20px;
+    line-height: 19px;
+}
+/* 북마크쪽 큰틀 */
+.sec-frame{
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
 }
 
-#name {
-    height: 30px;
-    width: 260px;
+.sec-frame>div:first-of-type{
+    border: none;
+}
+
+.sec-frame>div{
+    border-top: 1px solid #e1e2e3;
+}
+
+/* 북마크 */
+.bookmark{
+    padding: 26px 30px 30px;
+}
+
+.bookmark>h2{
     margin: 0;
-    padding: 12px 0;
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    border: 1px solid #c8c8c8;
-    margin-left: 34px;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 30px;
 }
 
-/*숫자조절버튼삭제*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.b-div>ul{
+    margin: -10px;
+    padding: 0;
+}
+b-ul:before{
+    content: "";
+    display: table;
 }
 
-#re1, #re2{
-    color:#969696;
-    border: #c8c8c8 solid 1px;
-    /* margin-left: 50px; */
-    padding: 20px;
-    /* padding-left: 90px;
-    padding-right: 80px; */
-    margin-bottom: 10px;
-    background-color: #c8c8c8; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 42px;
-    width: 300px;
-    position: relative;
-    line-height:0px;
+.bookmark>div>ul>li{
+    width: 24.2%;
 }
 
-/*지원하기모달의 버튼*/
-#upload, #write {
-    color:rgb(0, 206, 201);
-    border: rgb(0, 206, 201) solid 1px;
-    /* margin-left: 50px; */
-    padding: 20px;
-    /* padding-left: 90px;
-    padding-right: 80px; */
-    margin-bottom: 10px;
-    background-color: #ffffff; 
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold; 
-    font-size: 15px;
-    height: 42px;
-    width: 300px;
-    position: relative;
-    /* padding-left: 50px; */
-    line-height:0px;
-}
-#app{
-    color:white;
-    border: rgb(0, 206, 201) solid 1px;
-    padding: 20px;
-    /* margin-left: 50px; */
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    background-color: rgb(0, 206, 201); 
-    border-radius: 3px;
-    cursor: pointer; 
-    font-weight: bold; 
-    font-size: 15px;
-    width: 300px;
-    height: 42px;
-    line-height:0px;
+.b-div>ul li{
+    width: 25%;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 }
 
+div.company-margin {
+	float: left;
+	display: block;
+}
+
+a.company-href {
+	margin: 10px;
+	padding: 0;
+	border: 0;
+}
+
+.company-img {
+	padding-bottom: 100%;
+	background-size: cover;
+	background-position: 50%;
+	width: 169.75px;
+	height: 100px;
+	border-radius: 5px;
+	float: left;
+	display: block;
+}
+
+.f-body{
+    text-align: center;
+    float: left;
+  display: block;
+}
+
+.f-body>div{
+    margin: 5px;
+    text-align: center;
+}

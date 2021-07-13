@@ -10,7 +10,6 @@
 
 div {
 	list-style-type: none;
-
 }
 
 html{
@@ -55,6 +54,10 @@ a{
     flex: 0 0 auto;
     height: 60px;
     background-color: rgb(28, 28, 28);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
 
 .nav-con{
@@ -118,7 +121,7 @@ a{
 #nav3-3-humanresource,
 #nav3-4-applicant_status,
 #nav3-5-companyinfo,
-#nav3-6-ProfileName{
+#nav3-7-account{
     /* 링크 밑줄 제거 */
     text-decoration: none;
     font-size: 18px;

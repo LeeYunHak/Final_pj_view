@@ -9,9 +9,39 @@ body{
     font-size: 13px;
     font-weight: 400;
 }
+div {
+	list-style-type: none;
+}
 
 li {
 	list-style-type: none;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+ol,ul{
+    list-style: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    /* width: 1920px; */
+    height: 100%;
+    margin: 0;
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /* 네비게이션바 CSS START */
@@ -25,27 +55,23 @@ li {
   #nav3-1-logo {
   display: block;
   cursor: pointer;
-  margin-left: 20px;
   padding: 0px;
+  padding-right: 10px;
   }
   
   .navbar{
     flex: 0 0 auto;
     height: 60px;
-    width: 1600px;
-    /* max-width: 1600px; */
     background-color: white;
-    border-bottom: 1px solid #c8c8c8;
-    z-index: 100;
-    position: fixed;
-    left: 100px;
-    top: 0px;
+    width: 70%;
+    max-width: 500px;
+    top: 0;
+    font-weight: bold;
   }
   
   .nav-con{
     position: relative;
-    width: 1600px;
-    /* max-width: 1600px; */
+    width: 1000px;
     margin: 0px auto;
     padding: 0px 20px;
   }
@@ -54,7 +80,7 @@ li {
     float: left;
     position: relative;
     margin: 0px;
-  width: 100%;
+    width: 100%;
   }
   
   .nv-st{
@@ -63,9 +89,9 @@ li {
     margin: 0px;
     list-style: none;
     white-space: nowrap;
-  width: 100%;
+    width: 100%;
     list-style:none;
-    margin:0;
+    margin-bottom: 50px;
     padding:0;
   }
   
@@ -111,12 +137,13 @@ h3 {
 }
 
 div.container-margin-top-80{
-    margin-top: 120px !important;
+    margin-top: 50px !important;
     width: 1024px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 .col-xs-offset-4-col-xs-4{
     margin-left: 33.33333%;
@@ -139,6 +166,7 @@ div.container-margin-top-80{
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 500px;
 }
 .row-margin-top-15{
     margin-top: 15px !important;

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이력서</title>
-    <link rel="stylesheet" href="Cvpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="accountpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>계정설정페이지</title>
 </head>
 <body>
-    <div class="full" name="full">
+    <div class="full">
         <!-- 네비게이션바 START -->
         <header class="navbar">
             <div class="nav-con">
@@ -42,7 +42,7 @@
                                 <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <div>
                                 <div class="arrow_box">
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p>
                                     </div><br>
                                     <div class="mydreamer"><a href="mydreamer.html"
@@ -54,21 +54,21 @@
                                     <div class="logout"><a href="index.html"
                                             style="text-decoration: none;color: #00cec9; font-size: 14px;">
                                             로그아웃</a></div><br>
-                                    <div class="blank0">
+                                    <div class="blank">
                                         <p></p><br>
                                     </div>
                                 </div>
                             </div>
                             <li><a id="nav3-6-ProfileName" type="button"style="color: black; font-size: 15px;">이름</a>
                                 <!-- <li><a id="nav3-1-blank" type="button">&nbsp;</a></li> -->
-                            <li style="float: right;"><button class="home-btn" type="button" onclick="location.href='co_main.html'">기업서비스</button></li>
+                            <li style="float: right;"><button class="home-btn" type="button" onclick=" location.href='co_main.html'">기업서비스</button></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-    <!-- 네비게이션바 END -->
-
+        <!-- 네비게이션바 END -->
+    
         <!-- 탐색 -->
         <div class="bar">
             <div class="opennavi" style="width: 100%; height: 237px; text-align: right;min-width: 1750px;">
@@ -172,43 +172,31 @@
                 </div>
             </div>
         </div>
-    <div class="blank"></div>
-    <div class="resume-list-container">
-        <div id="resume-list">
-            <div class="resume-list-header">
-                <h4>최근 이력서</h4>
+        <div class="main">
+            <div class="sidebar">
+                <h4>&nbsp</h4>
+                <h4>&nbsp</h4>
+                <h5>&nbsp</h5>
+                <h2>계정 설정</h2>
+                <h2>&nbsp</h2>
+                <h2>&nbsp</h2>
+                <a href="accountpage.html"style="color: #00cec9;">비밀번호 설정</a>
+                <h5>&nbsp</h5>
+                <h5>&nbsp</h5>
+                <a href="dropoutpage.html" >&nbsp;&nbsp;&nbsp;&nbsp;회원탈퇴</a>
             </div>
-            <div style="max-height:inherit;overflow-y:inherit;height:inherit;">
-                <div class="resume-list-content">
-                    <div class="resume-item">
-                        <div class="resume-box">
-                            <button type="button" id="addBtn" class="resume-add-btn">
-                                <div class="wrapper">
-                                    <div class="box-dreamer">
-                                        <i class="resume-icon"></i>
-                                    </div>
-                                    <p>이력서 작성</p>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-box">
-                            <div class="drop-resume">
-                                <div class="wrapper">
-                                    <div class="box">
-                                        <i class="upload-icon"></i>
-                                    </div>
-                                    <p>파일 업로드</p>
-                                </div>
-                                <input type="file" style="display: none;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="setting">
+                <h3>비밀번호 설정</h3>
+                <input type="email" class="email" placeholder="abcd123@naver.com">
+                <h6>&nbsp</h6>
+                <h6>&nbsp</h6>
+                <h6 style="color: #adadad;">*비밀번호를 재설정 할 이메일 계정을 입력해주세요</h6>
+                <h6>&nbsp</h6>
+                <h6>&nbsp</h6>
+                <input type="submit" class="submit" value="전송">
             </div>
         </div>
-    </div>
+    </div>        
+    <script type="text/javascript" src="accountpage.js"> </script>
 </body>
-<script src="CVpage.js"></script>
 </html>

@@ -12,7 +12,7 @@ document.getElementsByClassName('opennavi')[0].addEventListener('mouseout', func
   document.getElementsByClassName('opennavi')[0].style.display ='none'
 });
 
-document.getElementById('nav3-7-MyPage').addEventListener('click', function() {
+document.getElementById('nav3-6-ProfileName').addEventListener('click', function() {
 
   document.getElementsByClassName('arrow_box')[0].style.display ='block'
 });

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* 공통 CSS START */
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+div {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 875px;
+}
+
+body{
+    /* width: 1920px; */
+    height: 100%;
+    margin: 0;
+}
+
+.full{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 네비게이션바 CSS START */
+
+
+/* 네비 */
+.logo {
+    width: 180px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+#nav3-1-logo {
+	display: block;
+	cursor: pointer;
+	padding: 0px;
+}
+.navbar{
+    flex: 0 0 auto;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    border-bottom: 1px solid #c8c8c8;
+    font-weight: bold;
+}
+
+.nav-con{
+    position: relative;
+    width: 1400px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.nv{
+    float: left;
+    position: relative;
+    margin: 0px;
+	width: 100%;
+}
+
+.nv-st{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    white-space: nowrap;
+	width: 100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nv-st>li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+	list-style-type: none;
+}
+
+.nv-st::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+#nav3-1-blank{
+
+    /* 링크 밑줄 제거 */
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    padding:20px;
+}
+
+
+.home-btn:hover{
+    background-color: #00cecbaf;
+    color: white;
+    border-color: #00cecbaf;
+    }
+#popup_open_btn:hover{
+    background-color: #00cecbaf;
+    color: white;
+    border-color: #00cecbaf;
+    }
+    
+
+.select-ic{
+    margin: 0px 1rem;
+    transition: transform 0.2s ease 0s;
+    display: inline-block;
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+}
+
+.select-ic::before{
+    content:url(images/337-ctrl.png);
+}
+
+.home-btn{
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: transparent;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+	margin-top: 8px;
+}
+#popup_open_btn{
+  font-size: 14px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: transparent;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+	margin-top: 8px;
+  }
+
+/* 네비 끝 */
+
+.blank{
+	width: 100%;
+	height: 20px;
+}
+.blank1{
+	height: 100%;
+	width: 50px;
+}
+.blank2{
+	height: 100%;
+	width: 25px;
+}
+
+.drmain{
+  height: 100%;
+  width: 100%;
+  right: 100px;
+  white-space: nowrap;
+}
+.drmain1{
+  margin-top: 10%;
+  height: 50%;
+  width: 80%;
+  padding-left: 100px;
+}
+.drmain1-1{
+  width: 50%;
+  float: left;
+  padding-top: 100px;
+  min-height: 400px;
+}
+
+.drmain2{
+  height: 50%;
+  width: 80%;
+  /* float: left; */
+}
+
+.dramin2-1{
+  float: right;
+  width: 50%;
+  padding-left: 100px;
+  margin-top: 100px;
+  min-width: 700px;
+  min-height: 200px;
+}
+
+.camera{
+  object-fit: cover;
+  max-width: 600px;
+  max-height: 500px;
+  float: right;
+  top: 100px;
+  margin-right: 100px;
+}
+.movie{
+  object-fit: cover;
+  max-width: 600px;
+  max-height: 500px;
+  float: left;
+}
+
+#startbtn{
+  border-top-left-radius:5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgb(0, 206, 201);
+  background-color: rgb(0, 206, 201);
+  color: white;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+#startbtn:hover{
+  color: rgb(0, 206, 201);
+  background-color: white;
+}
+
+#my_modal{
+  display: none;
+  width: 400px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+}
+.Modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: white;
+}
+
+#email, #password{
+  border: 1px solid #c8c8c8;
+} 
+
+div.modal-text{
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+.form-group{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.form-group-pw{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 0px !important;
+
+}
+
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.label-margin-none{
+  margin: 0;
+  width: 100%;
+}
+.checkBox{
+  position: relative;
+  float: left;
+}
+.checkBox .checkBox-text{
+  position: relative;
+  float: left;
+  font-size: 13px;
+}
+#my_modal .sns-btn-naver, .sns-btn-kakao,.sns-btn-google,.sns-btn-apple{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns_login{
+  margin: 13px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns-btn-kakao{
+  background-color: #f9e000;
+}
+.sns-btn-kakao img{
+  width: 30px;
+}
+.sns-btn-google{
+ background-color: #f8f9fd;
+}
+.sns-btn-google img{
+  width: 30px;
+}
+
+.login-btn{
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px !important;
+  background-color: #00cecbad;
+  border: none;
+  width: 100% !important;
+  padding: 15px 15px;
+}
+#joinBtn{
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 4px !important;
+  color: #00cec9;
+  background-color: #fff;
+  border: 1px solid #00cec9;
+  width: 100% !important;
+  padding: 15px 15px;
+}
+.padding-top-10{
+  padding-top: 10px !important;
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+.form-control{
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 6px;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}

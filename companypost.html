@@ -23,7 +23,7 @@
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                            <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
+                            <!-- <li><a id="nav3-1-blank" type="button">&nbsp;</a></li> -->
                             <li><a id="nav3-2-Select" type="button">탐색</a></li>
                             <!-- <li><a id="nav3-1-blank" type="button">&nbsp;</a></li> -->
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
@@ -39,7 +39,6 @@
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                            <li><a id="nav3-7-MyPage"><img class="avatar" src="images/avatar.png"></a></li>
                             <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
                         <div>
                             <div class="arrow_box">
@@ -47,23 +46,22 @@
                                     <p></p>
                                 </div><br>
                                 <div class="mydreamer"><a href="mydreamer.html"
-                                        style="text-decoration: none;color: #00cec9;">
+                                        style="text-decoration: none;color: #00cec9; font-size: 14px;">
                                         MY드리머</a></div><br>
                                 <div class="profile"><a href="mydreamermodify.html"
-                                        style="text-decoration: none;color: #00cec9;">
+                                        style="text-decoration: none;color: #00cec9; font-size: 14px;">
                                         프로필</a></div><br>
-                                <div class="logout"><a href="mainhtml.html"
-                                        style="text-decoration: none;color: #00cec9;">
+                                <div class="logout"><a href="index.html"
+                                        style="text-decoration: none;color: #00cec9; font-size: 14px;">
                                         로그아웃</a></div><br>
                                 <div class="blank">
                                     <p></p><br>
                                 </div>
                             </div>
                         </div>
-                        <li><a id="nav3-6-ProfileName" type="button" href="mydreamer.html"
-                            style="color: brown; font-size: 15px;">이름</a>
-                            <li><a id="nav3-1-blank" type="button">&nbsp;</a></li>
-                        <li style="float: right;"><button class="home-btn" type="button">기업서비스</button></li>
+                        <li><a id="nav3-6-ProfileName" type="button"style="color: black; font-size: 15px;">이름</a>
+                            <!-- <li><a id="nav3-1-blank" type="button">&nbsp;</a></li> -->
+                        <li style="float: right;"><button class="home-btn" type="button" onclick=" location.href='co_main.html'">기업서비스</button></li>
                     </ul>
                 </nav>
             </div>
@@ -73,7 +71,7 @@
 
         <!-- 탐색 -->
         <div class="bar">
-            <div class="opennavi" style="width: 100%; height: 237px; text-align: right;">
+            <div class="opennavi" style="width: 100%; height: 237px; text-align: right;min-width: 1750px;">
                 <div style="z-index: 1000; float: left;">
                     <img src="images/movie.jpg" alt="" style="width: 350px;">
                 </div>
@@ -181,18 +179,16 @@
                         <div><img src="images/movie.jpg" style="width: 900px; height: 500px;border:solid 2px #c8c8c8;"> </div>   
                         <div><p>기업 소개 내용/자격요건/우대사항 내용</p></div> 
                     </div>
-                    <div style="height: 600px;">
                         <div id="map"></div>
-                    </div>
+                    
                 </div>
                 <div class="sidebar">
                         <h2 style="text-align: center; margin-top: 70px;">기업 이름</h2>
-                        <div id="bookmark" style="width: 300px; margin-top: 50px;">
+                        <div id="bookmark" style="width: 300px; margin-top: 50px; display: inline-block;">
                             <div id="bm" class="bm">
                                 <input type="button" value="북마크" id="bookmarkbtn" class="bookmarkbtn" >
                                 <img id="bookmarkimg" class="bookmarkimg" name="bookmarkimg" src="images/bookmark.png" style="cursor: pointer;">    
                             </div>                          
-                        
                             <div id="hi"><input type="button" value="채용하기" id="hirebtn"></div>
                         </div>
                 </div>
@@ -217,19 +213,20 @@
                 <span style="text-align: center; font-size: 20px;" >지원하기</span>
                 <button type="button" class="Modal_close_btn2">X</button>
             </div>
+            <div style="border-bottom: 1px solid #e1e2e3; height: 0px; width: 360px; margin-left: 20px; margin-bottom: 20px;"></div>
             <div class="ModalBody2">
-                <div>
+                <div style=" height: 220px;">
                     <h4 style="text-align: left; margin-left: 20px;">지원 정보</h4>
                     <form name="info" action="companypost.html" method="POST">
                         <label for="name" class="name">이름<input required id="name" type="text" autocomplete="off"></label>
                         <label for="email" class="email">이메일<input required id="email" type="email" autocomplete="off"></label>
                         <label for="phone" class="phone">연락처<input required id="phone" type="number" autocomplete="off"></label>
                     </form>
-                    <div style="border-bottom: 1px solid #e1e2e3; height: 20px; width: 360px; margin-left: 20px; margin-bottom: 20px;"></div>
                 </div>
+                <div style="border-bottom: 1px solid #e1e2e3; height: 0px; width: 360px; margin-left: 20px; margin-bottom: 20px;"></div>
                 <div>
                     <h4 style="text-align: left; margin-left: 20px; ">첨부파일</h4>
-                    <div style="margin-bottom: 20px; margin-top: 20px;">
+                    <div style="margin-bottom: 20px; margin-top: 20px; height: 100px;">
                         <input type="button" id="re1" class="re1" value="이력서1                                      X">
                         </input>
                         <input type="button" id="re2" class="re2" value="이력서2                                      X">
